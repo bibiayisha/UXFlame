@@ -11,8 +11,33 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Roboto, sans-serif', // You can change the font family
+    fontFamily: 'Poppins, sans-serif', 
+    h1: {
+      fontSize: '48px',
+      fontWeight: '700',
+      lineHeight: '48px'
+    },
+    button: {
+      fontSize: '12px',
+      fontWeight: '700',
+      lineHeight: '20px',
+      textTransform: 'none'
+    }
   },
+  components: {
+    MuiButton: {
+      styleOverrides:{
+        root: {
+          padding: '12px 45px'
+        },
+        outline: {
+          color: 'white',
+          border: '2px solid white',
+          borderRadius: '0'
+        }
+      }
+    }
+  }
 });
 
 export default theme;
