@@ -6,6 +6,7 @@ import Header from '../../atoms/Header'
 import ImageCarousal from '../../molecules/ImageCarousal/ImageCarousal'
 import NavBar from '../../atoms/NavBar'
 import './Home.css'
+import NewVideos from '../../atoms/NewVideos'
 
 function Home() {
   return (
@@ -14,9 +15,10 @@ function Home() {
     <NavBar/>
     <Header/>
     </div>
-    <div className='-mt-40'>
-      <ImageCarousal slidesToShow={5} slides={slider1}/>
+    <div className=''>
+      <ImageCarousal slidesToShow={5} slides={slider1} marginSpecific={'-mt-40'}/>
     </div>
+    <NewVideos/>
     </>
   )
 }

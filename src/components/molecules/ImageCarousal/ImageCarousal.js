@@ -11,8 +11,7 @@ import { ImageCarousalProps } from "./Types";
 
 class ImageCarousal extends React.Component {
     render() {
-      const {slidesToShow, slides, smallHeading, bigHeading } = this.props;
-      console.log(slides)
+      const {slidesToShow, slides, smallHeading, bigHeading, marginSpecific } = this.props;
       const settings = {
         dots: false,
         infinite: true,
@@ -22,7 +21,7 @@ class ImageCarousal extends React.Component {
       };
   
       return (
-        <div className='m-0 px-8 pl-20 pt-10 py-6 bg-offBlue w-11/12 float-right overflow-hidden'>
+        <div className={`m-0 ${marginSpecific} px-8 pl-20 pt-10 py-6 bg-offBlue w-11/12 float-right overflow-hidden`}>
           {/* TODO: Do styling and spacing of small and big heading */}
           <p>{smallHeading}</p>
           <Typography>{bigHeading}</Typography>

@@ -13,4 +13,5 @@ export const ImageCarousalProps = {
   slidesToShow: PropTypes.number,
   smallHeading: PropTypes.string,
   bigHeading: PropTypes.string,
+  margin: PropTypes.string,
 };
