@@ -1,0 +1,11 @@
+.slick-list{
+    margin-right: -15%;
+}
+.slick-prev {
+  top: -10%; 
+  left: -6.5%;
+}
+.slick-next {
+    top: -10%; 
+    left: -3.5%;
+  }
