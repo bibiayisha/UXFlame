@@ -1,7 +1,7 @@
 // React imports
 import React, { Component } from "react";
 // Third party import
-import {Box} from '@mui/material'
+import {Box, Typography} from '@mui/material'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -11,23 +11,27 @@ import { ImageCarousalProps } from "./Types";
 
 class ImageCarousal extends React.Component {
     render() {
-      const { slides } = this.props;
+      const {slidesToShow, slides, smallHeading, bigHeading } = this.props;
+      console.log(slides)
       const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow:slidesToShow || 4,
         slidesToScroll: 1,
       };
   
       return (
-        <div className='m-0 p-8 bg-red w-11/12 float-right overflow-hidden -mt-16'>
+        <div className='m-0 px-8 pl-20 pt-10 py-6 bg-offBlue w-11/12 float-right overflow-hidden'>
+          {/* TODO: Do styling and spacing of small and big heading */}
+          <p>{smallHeading}</p>
+          <Typography>{bigHeading}</Typography>
           <Slider {...settings}>
             {slides.map((slide, index) => (
-              <div key={index}>
-                <img src={slide.imageurl} />
-                <h3>{slide.heading}</h3>
-                <p>{slide.subtext}</p>
+              <div  key={index}>
+                <img width={'230px'} src={slide.imageurl} />
+                <h3 className="mt-4 text-fs-16 leading-lh-16 text-white font-bold w-11/12">{slide.heading}</h3>
+                <p className="mt-1 text-gray  text-fs-13 leading-lh-16">{slide.subtext}</p>
               </div>
             ))}
           </Slider>

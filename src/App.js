@@ -7,16 +7,12 @@ import { ThemeProvider } from '@mui/material/styles';
 import './App.css';
 import theme from './assets/themes/theme'; 
 import NavBar from './components/atoms/NavBar';
-import Header from './components/atoms/Header';
-import ImageCarousal from './components/molecules/ImageCarousal/ImageCarousal';
-import { slider1 } from './components/utils/SlidesData';
+import Home from './components/webPages/Home/Home';
 
 function App() {
   return (
   <ThemeProvider theme={theme}>
-    <NavBar />
-    <Header/>
-    <ImageCarousal slides={slider1}/>
+    <Home/>
   </ThemeProvider>
   );
 }

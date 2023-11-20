@@ -10,4 +10,7 @@ export const ImageCarousalProps = {
       videoLink: PropTypes.string.isRequired,
     })
   ).isRequired,
+  slidesToShow: PropTypes.number,
+  smallHeading: PropTypes.string,
+  bigHeading: PropTypes.string,
 };

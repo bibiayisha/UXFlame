@@ -4,11 +4,15 @@ import React from 'react'
 import images from '../utils/constants'
 
  function NavBar() {
+  console.log(images);
+  console.log(images.header);
+  console.log(images.header.logo);
+
   return (
-    <div className='w-full bg-black'>
+    <div className='w-full bg-transparent'>
       <div className='md:flex items-center justify-between container mx-auto px-24 py-4'>
         <div>
-          <img src={images.header.logo} />
+          <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
         </div>
         <div>
         <ul className='md:flex md:items-center '>

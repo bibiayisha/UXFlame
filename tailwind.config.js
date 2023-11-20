@@ -14,7 +14,7 @@ module.exports = {
         'red': '#FF3D54',
       },
       fontSize: {
-        'fs-13':'13px',
+        'fs-13':'12px',
         'fs-14':'14px',
         'fs-16': '14px',
         'fs-18': '16px',
@@ -23,6 +23,7 @@ module.exports = {
       },
       lineHeight: {
         'lh-32': '30px',
+        'lh-16px': '16px'
       }
     },
   },
