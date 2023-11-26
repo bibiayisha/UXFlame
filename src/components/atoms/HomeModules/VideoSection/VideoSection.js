@@ -4,7 +4,7 @@ import React from 'react'
 import { Grid, Typography } from '@mui/material'
 // App imports
 import './VideoSection.css'
-import images from '../../utils/constants'
+import images from '../../../utils/constants'
 
 function VideoSection() {
   return (

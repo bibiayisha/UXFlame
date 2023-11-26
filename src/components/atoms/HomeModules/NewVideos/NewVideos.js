@@ -3,9 +3,9 @@ import React from 'react'
 // Third party imports
 import { Button, Grid, Typography } from '@mui/material'
 // App imports
-import images from '../../utils/constants'
-import {slider2} from '../../utils/SlidesData'
-import NewVideosSlider from '../../molecules/NewVideosSlider/NewVideosSlider'
+import images from '../../../utils/constants'
+import {slider2} from '../../../utils/SlidesData'
+import NewVideosSlider from '../../../molecules/NewVideosSlider/NewVideosSlider'
 
 function NewVideos() {
   return (

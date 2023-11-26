@@ -3,7 +3,7 @@ import React from 'react'
 // Third party imports
 import {Typography, Button} from '@mui/material';
 // App imports
-import images from '../../utils/constants';
+import images from '../../../utils/constants';
 
 function Header() {
   return (

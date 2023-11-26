@@ -40,7 +40,7 @@ code {
   .container-sm,
   .container-md,
   .container-lg {
-    max-width: 960px !important;
+    max-width: 950px !important;
   }
 }
 
@@ -50,7 +50,7 @@ code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1140px !important;
+    max-width: 1120px !important;
   }
 }
 
@@ -61,6 +61,6 @@ code {
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1320px !important;
+    max-width: 1300px !important;
   }
 }

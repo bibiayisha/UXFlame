@@ -23,6 +23,12 @@ const theme = createTheme({
       lineHeight: '48px',
       letterSpacing: '-1.2px'
     },
+    h2: {
+      fontSize: '64px',
+      fontWeight: '700',
+      lineHeight: '68px',
+      letterSpacing: '-1.5px'
+    },
     button: {
       fontSize: '12px',
       fontWeight: '700',

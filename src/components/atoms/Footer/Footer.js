@@ -9,6 +9,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 // App imports
 import images from '../../utils/constants';
 import './Footer.css'
+import { count } from '../../utils/subscribersCount';
 
 function Footer() {
   return (
@@ -56,7 +57,7 @@ function Footer() {
                 <p className='text-fs-18 tracking-ls-neg2 text-white font-semibold'>Subs Live Count</p>
               </div>
               <div className='map flex flex-col justify-center align-middle items-center'>
-                <p className='font-bold text-white text-fs-27'>1,829,436</p>
+                <p className='font-bold text-white text-fs-27'>{count.count}</p>
                 <p className='text-white font-bold text-fs-14 mt-1'><span className='text-orange'>@</span>uxflame</p>
               </div>
             </div> 
