@@ -14,16 +14,27 @@ module.exports = {
         'red': '#FF3D54',
       },
       fontSize: {
+        'fs-12':'11px',
         'fs-13':'12px',
-        'fs-14':'14px',
+        'fs-14':'13px',
         'fs-16': '14px',
         'fs-18': '16px',
+        'fs-20': '18px',
         'fs-22': '22px',
         'fs-24': '24px',
+        'fs-27': '25px',
+        'fs-120': '105px',
       },
       lineHeight: {
         'lh-32': '30px',
-        'lh-16px': '16px'
+        'lh-16': '16px',
+        'lh-21': '21px',
+        'lh-43': '43px',
+        'lh-24': '24px',
+      },
+      letterSpacing: {
+        'ls-neg':'-0.84px',
+        'ls-neg2':'-0.4px'
       }
     },
   },

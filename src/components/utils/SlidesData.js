@@ -2,7 +2,7 @@
 import images from "./constants"
 
 // slider 1
-    export const slider1 = [
+export const slider1 = [
         {
             heading: 'Top 10 Best Places in Japan to get Deluxe Edition Boxes!',
             subtext:  '734K views - 6 hours ago',
@@ -46,4 +46,20 @@ import images from "./constants"
         videoLink: ''
     },
 
+]
+
+// slider 2 (New Videos Slider)
+export const slider2 = [
+    {
+        imageurl:images.slider2.slide1,
+        videoLink: ''
+    },
+    {
+        imageurl:images.slider2.slide1,
+        videoLink: ''
+    },
+    {
+        imageurl:images.slider2.slide1,
+        videoLink: ''
+    }
 ]

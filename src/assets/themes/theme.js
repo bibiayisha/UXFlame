@@ -17,6 +17,18 @@ const theme = createTheme({
       fontWeight: '700',
       lineHeight: '48px'
     },
+    h3: {
+      fontSize: '44px',
+      fontWeight: '700',
+      lineHeight: '48px',
+      letterSpacing: '-1.2px'
+    },
+    h2: {
+      fontSize: '64px',
+      fontWeight: '700',
+      lineHeight: '68px',
+      letterSpacing: '-1.5px'
+    },
     button: {
       fontSize: '12px',
       fontWeight: '700',
@@ -34,6 +46,13 @@ const theme = createTheme({
           color: 'white',
           border: '2px solid white',
           borderRadius: '0'
+        },
+        text: {
+          padding: '8px',
+          fontSize: '12px',
+          color: 'white',
+          fontWeight:'600',
+          textTransform: 'uppercase'
         }
       }
     }
