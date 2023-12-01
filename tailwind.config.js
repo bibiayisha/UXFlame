@@ -20,7 +20,7 @@ module.exports = {
         'fs-16': '14px',
         'fs-18': '16px',
         'fs-20': '18px',
-        'fs-22': '22px',
+        'fs-22': '20px',
         'fs-24': '24px',
         'fs-27': '25px',
         'fs-120': '105px',
@@ -30,7 +30,7 @@ module.exports = {
         'lh-16': '16px',
         'lh-21': '21px',
         'lh-43': '43px',
-        'lh-24': '24px',
+        'lh-24': '22px',
       },
       letterSpacing: {
         'ls-neg':'-0.84px',

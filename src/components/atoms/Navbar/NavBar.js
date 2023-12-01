@@ -4,9 +4,6 @@ import React from 'react'
 import images from '../../utils/constants'
 
  function NavBar() {
-  console.log(images);
-  console.log(images.header);
-  console.log(images.header.logo);
 
   return (
     <div className='w-full bg-transparent'>
