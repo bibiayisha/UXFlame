@@ -22,6 +22,11 @@ const images = {
         news1: require('../../assets/media/news/news1.svg').default,
         news2: require('../../assets/media/news/news2.svg').default,
         news3: require('../../assets/media/news/news3.svg').default,
+    },
+    fShorts: {
+        slide1:  require('../../assets/media/fShorts/slide1.svg').default,
+        slide2:  require('../../assets/media/fShorts/slide2.svg').default,
+        slide3:  require('../../assets/media/fShorts/slide3.svg').default,
     }
 }
 

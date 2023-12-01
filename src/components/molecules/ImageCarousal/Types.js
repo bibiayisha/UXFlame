@@ -14,4 +14,5 @@ export const ImageCarousalProps = {
   smallHeading: PropTypes.string,
   bigHeading: PropTypes.string,
   margin: PropTypes.string,
+  bgColor: PropTypes.bool,
 };

@@ -10,6 +10,7 @@ import NewVideos from '../../atoms/HomeModules/NewVideos/NewVideos'
 import VideoSection from '../../atoms/HomeModules/VideoSection/VideoSection'
 import Subscribers from '../../atoms/HomeModules/Subscribers/Subscribers'
 import LatestNews from '../../atoms/HomeModules/LatestNews/LatestNews'
+import FShortsSection from '../../atoms/HomeModules/FShortsSection/FShortsSection'
 
 function Home() {
   return (
@@ -19,9 +20,16 @@ function Home() {
     <Header/>
     </div>
     <div className=''>
-      <ImageCarousal slidesToShow={5} slides={slider1} marginSpecific={'-mt-40'}/>
+      <ImageCarousal slidesToShow={5} slides={slider1} marginSpecific={'-mt-40'} bgColor={true}/>
     </div>
     <NewVideos/>
+    <div className=''>
+      <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Latest Videos'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
+    </div>
+    <div className=''>
+      <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Featured Gaming'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
+    </div>
+    <FShortsSection/>
     <Subscribers/>
     <LatestNews/>
     <VideoSection/>
