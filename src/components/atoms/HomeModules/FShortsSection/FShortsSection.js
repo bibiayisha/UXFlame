@@ -9,16 +9,16 @@ import images from '../../../utils/constants'
 
 function FShortsSection() {
   return (
-    <div className='bg-darkBlue pt-96 pb-32'>
+    <div className='bg-darkBlue md:pt-96 pt-10 pb-32'>
         <div className=''>
-            <div className='container flex flex-col justify-center items-center pb-28 pt-28'>
-                <div><p className='uppercase text-gray text-fs-16 mb-4'>60 SECONDS CRAFT</p></div>
-                <div className='text-white'><Typography variant='h2'>Featured Shorts</Typography></div>
+            <div className='container flex flex-col justify-center items-center md:pb-28 pb-0 pt-28'>
+                <div><p className='uppercase text-gray text-fs-16 mb-4 '>60 SECONDS CRAFT</p></div>
+                <div className='text-white text-center'><Typography variant='h2'>Featured Shorts</Typography></div>
             </div>
             <div className='pb-20'>
                 <FeaturedShorts slides={FShorts}/>
             </div>
-            <div className='container'>
+            <div className='container text-center md:text-left'>
                 <Button variant='text' startIcon={<img width={'15px'} src={images.body.playBtn}/>}>Browse all playlists</Button>
             </div>
         </div>

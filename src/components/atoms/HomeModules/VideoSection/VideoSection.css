@@ -1,3 +1,10 @@
 .video-sec{
     background: linear-gradient(to right, #fb8045 60%, #1b1b29 40%);
 }
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .video-sec{
+        background: linear-gradient(to right, #fb7f4500 60%, #fb7f4500 40%);
+    }
+  }

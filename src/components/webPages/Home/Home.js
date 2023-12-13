@@ -11,6 +11,7 @@ import VideoSection from '../../atoms/HomeModules/VideoSection/VideoSection'
 import Subscribers from '../../atoms/HomeModules/Subscribers/Subscribers'
 import LatestNews from '../../atoms/HomeModules/LatestNews/LatestNews'
 import FShortsSection from '../../atoms/HomeModules/FShortsSection/FShortsSection'
+import TheChannel from '../../atoms/HomeModules/TheChannel/TheChannel'
 
 function Home() {
   return (
@@ -23,6 +24,8 @@ function Home() {
       <ImageCarousal slidesToShow={5} slides={slider1} marginSpecific={'-mt-40'} bgColor={true}/>
     </div>
     <NewVideos/>
+    <TheChannel/>
+    <div className='bg-darkBlue md:py-40 py-0'></div>
     <div className=''>
       <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Latest Videos'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
     </div>

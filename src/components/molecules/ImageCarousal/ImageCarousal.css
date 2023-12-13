@@ -16,3 +16,10 @@
 .slide-spacing{
   padding-right: 20px !important;
 }
+
+/* Mobile respnsiveness */
+@media screen and (max-width: 768px) {
+  .slide-spacing{
+    padding-right: 0px !important;
+  }
+}

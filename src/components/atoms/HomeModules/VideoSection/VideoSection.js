@@ -5,14 +5,15 @@ import { Grid, Typography } from '@mui/material'
 // App imports
 import './VideoSection.css'
 import images from '../../../utils/constants'
+import VideoThumbnail from '../../VideoThumbnail/VideoThumbnail'
 
 function VideoSection() {
   return (
     <div className='bg-darkBlue py-20'>
-        <div className='video-sec ' >
-        <Grid container alignItems="stretch" className='container'>
+        <div className='video-sec' >
+        <Grid container alignItems="stretch" className='container bg-orange  md:bg-transparent pb-6 md:pb-0'>
         <Grid item xs={12} md={6} lg={7} >
-            <div className='flex flex-col h-full justify-center'>
+            <div className='flex flex-col h-full justify-center md:bg-transparent md:py-0 py-10 text-center md:text-left'>
             <div>
                 <p className='text-white text-fs-16 font-light uppercase'>unbox spotlight</p>
             </div>
@@ -23,7 +24,7 @@ function VideoSection() {
         </Grid>
         <Grid item xs={12} md={6} lg={5}>
             <div className='h-full'>
-            <img className='h-full w-full object-cover' src={images.body.latestVideo} alt="Latest Video" />
+            <VideoThumbnail thumbnailUrl={images.body.latestVideo} fontSize={'large'}/>
             </div>
         </Grid>
         </Grid>

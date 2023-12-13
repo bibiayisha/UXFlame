@@ -18,6 +18,14 @@ class NewVideosSlider extends React.Component {
         speed: 100,
         slidesToShow:1,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768, 
+            settings: {
+              arrows: false, 
+            },
+          },
+        ],
       };
   
       return (
@@ -25,7 +33,7 @@ class NewVideosSlider extends React.Component {
           <Slider {...settings}>
             {slides.map((slide, index) => (
               <div  key={index}>
-                <img src={slide.imageurl} />
+                <img src={slide.imageurl}  width={'100%'}/>
               </div>
             ))}
           </Slider>

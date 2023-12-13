@@ -14,24 +14,24 @@ import { count } from '../../utils/subscribersCount';
 function Footer() {
   return (
     <div className='bg-darkBlue'>
-        <Grid className='container py-20' container >
+        <Grid className='container py-20 text-center md:text-left' container >
             <Grid item xs={12} md={6} lg={3} >
-              <div className='mb-1.5'><img width={'70px'} src={images.footer.youtube} /></div>
-              <div><img width={'150px'} src={images.header.logo} /></div>
+              <div className='mb-1.5'><img width={'70px'} src={images.footer.youtube} className='mx-auto md:mx-0' /></div>
+              <div><img width={'150px'} src={images.header.logo} className='mx-auto md:mx-0' /></div>
               <div className='my-9'><p className='text-fs-14 tracking-ls-neg text-gray'>Bringing you the best unboxing videos of the latest technology, games and toys!</p></div>
-              <div className='flex flex-row'>
+              <div className='flex flex-row justify-center md:justify-start'>
                 <div><a><FacebookRoundedIcon fontSize='small' className='icons-color mr-4' /></a></div>
                 <div><a><TwitterIcon fontSize='small' className='icons-color mr-4' /></a></div>
                 <div><a><InstagramIcon fontSize='small' className='icons-color mr-4' /></a></div>
                 <div><a><YouTubeIcon fontSize='medium' className='icons-color mr-4' /></a></div>
               </div>
             </Grid>
-            <Grid item xs={12} md={6} lg={4} className='pl-10'>
-              <div className='px-10'>
+            <Grid item xs={12} md={6} lg={4} className='md:pl-10 pl-0'>
+              <div className='md:px-10 px-20 md:my-0 my-10'>
                 <div>
                   <p className='text-fs-18 tracking-ls-neg2 text-white font-semibold'>Unbox Links</p>
                 </div>  
-                <div className='flex flex-row justify-between mt-14'>
+                <div className='flex flex-row justify-between md:mt-14 md:mb-0 mb-4 mt-6'>
                   <div>
                     <ul>
                       <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Home</a></li>
@@ -51,7 +51,7 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={6} md={6} lg={5} className='pl-10'>
+            <Grid item xs={12} md={6} lg={5} className='md:pl-10 pl-0'>
             <div>
               <div>
                 <p className='text-fs-18 tracking-ls-neg2 text-white font-semibold'>Subs Live Count</p>
