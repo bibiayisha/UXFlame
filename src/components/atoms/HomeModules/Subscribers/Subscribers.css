@@ -5,3 +5,11 @@
     height: 600px;
     width: 100%;
 }
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .subscribers{
+        height: 400px;
+    }
+    
+  }

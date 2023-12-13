@@ -9,13 +9,13 @@ import { count } from '../../../utils/subscribersCount'
 function Subscribers() {
   return (
     <div className='bg-darkBlue py-36 '>
-        <div className='container flex flex-col items-center justify-between subscribers'>
+        <div className='container flex flex-col items-center justify-between subscribers text-center'>
             <div className='flex flex-col items-center'>
                 <div className='mb-3'><p className='text-fs-16 text-gray leading-lh-24'>UXFLAME FAMILY</p></div>
                 <div className='text-white'><Typography variant='h2'>Subscribers <span className='text-orange'>Live</span> Count</Typography></div>
             </div>
             <div>
-                <p className='text-fs-120 font-bold text-white'>{count.count}</p>
+                <p className='md:text-fs-120 text-fs-34 font-bold text-white'>{count.count}</p>
             </div>
             <div className='flex flex-row justify-center align-middle items-center'>
                 <div className='mr-4'>

@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 // App imports
 import './ImageCarousal.css'
 import { ImageCarousalProps } from "./Types";
+import VideoThumbnail from "../../atoms/VideoThumbnail/VideoThumbnail";
 
 class ImageCarousal extends React.Component {
     render() {
@@ -19,24 +20,34 @@ class ImageCarousal extends React.Component {
         speed: 500,
         slidesToShow:slidesToShow || 4,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 768, 
+            settings: {
+              slidesToShow: 1, 
+              slidesToScroll: 1,
+              arrows: false, 
+            },
+          },
+        ],
       };
   
       return (
-        <div className={`m-0 ${marginSpecific} px-8 pl-20   ${bgColor ? 'bg-offBlue pb-6 pt-14' : 'pb-28'} w-11/12 float-right overflow-hidden slider1`}>
+        <div className={`md:m-0 ${marginSpecific} md:px-8 md:pl-20   ${bgColor ? 'bg-offBlue md:pb-6 md:pt-14' : 'bg-darkBlue md:pb-28'} md:w-11/12 md:float-right md:overflow-hidden slider1 p-10 mt-0 mx-auto md:w-full`}>
           {bgColor ? null : (
             <>
-              <div className="mb-4">
+              <div className="mb-4 text-center md:text-left">
                 <p className="text-gray text-fs-16 uppercase">{smallHeading}</p>
               </div>
-              <div className="text-white mb-20">
+              <div className="text-white mb-20 text-center md:text-left">
                 <Typography variant="h3">{bigHeading}</Typography>
               </div>
             </>
           ) }
           <Slider {...settings}>
             {slides.map((slide, index) => (
-              <div  key={index} className="slide-spacing">
-                <img width={'230px'} src={slide.imageurl} />
+              <div  key={index} className="slide-spacing text-center md:text-left">
+                <VideoThumbnail thumbnailUrl={slide.imageurl} fontSize={'medium'}/>
                 <h3 className={`mt-4 ${bgColor? 'text-fs-16 leading-lh-16':'text-fs-18 leading-lh-24 mb-2'}  text-white font-semibold w-11/12 `}>{slide.heading}</h3>
                 <p className={`mt-1 text-gray  ${bgColor? 'text-fs-13':'text-fs-14'} leading-lh-16`}>{slide.subtext}</p>
               </div>

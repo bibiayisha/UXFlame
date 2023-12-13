@@ -23,6 +23,7 @@ module.exports = {
         'fs-22': '20px',
         'fs-24': '24px',
         'fs-27': '25px',
+        'fs-34': '30px',
         'fs-120': '105px',
       },
       lineHeight: {

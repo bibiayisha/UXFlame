@@ -1,5 +1,7 @@
 // React imports
 import React from 'react'
+// Third party imports
+import { IconButton } from '@mui/material'
 // App imports
 import images from '../../utils/constants'
 
@@ -22,7 +24,10 @@ import images from '../../utils/constants'
           <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Contact</a></li>
           <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Shop</a></li>
         </ul>
-      </div>
+        </div>
+        <div>
+          <IconButton></IconButton>
+        </div>
       </div>
     </div>
   ) 
