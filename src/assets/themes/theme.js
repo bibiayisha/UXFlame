@@ -55,6 +55,47 @@ const theme = createTheme({
           textTransform: 'uppercase'
         }
       }
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        root: {
+          overflow: 'hidden'
+        },
+        paper: {
+          backgroundColor: '#FB8045',
+        },
+      }
+    },
+    MuiListItem: {
+      styleOverrides: {
+        root: {
+          padding: '8px',
+          fontSize: '13px',
+          fontWeight: 'bold',
+          color: 'white',
+          '&:hover': {
+            borderBottom: '2px solid white',
+            cursor: 'pointer'
+          },
+          '&.navListItem': {
+            '&:hover': {
+              borderBottom: 'none',
+              textDecoration: 'underline solid 2px white',
+              marginLeft: '8px'
+            },
+          }
+        }
+      }
+    },
+    MuiList: {
+      styleOverrides:{
+        root: {
+          '&.navList': {
+            display: 'flex',
+            flexDirection: 'row',
+          },
+        }
+      }
     }
   }
 });

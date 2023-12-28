@@ -1,34 +1,91 @@
 // React imports
-import React from 'react'
+import React, { useState } from 'react'
 // Third party imports
-import { IconButton } from '@mui/material'
+import { IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 // App imports
 import images from '../../utils/constants'
 
  function NavBar() {
 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen)
+  }
+
   return (
     <div className='w-full bg-transparent'>
-      <div className='md:flex items-center justify-between container mx-auto  py-4'>
+      <div className='flex items-center justify-between container mx-auto  py-4'>
         <div>
           <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
         </div>
-        <div>
-        <ul className='flex items-center '>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Home</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Videos</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Blogs</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>About</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Events</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Partners</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Contact</a></li>
-          <li className='ml-10  text-fs-14 font-semibold cursor-pointer text-white'><a className='hover:border-b-2 '>Shop</a></li>
-        </ul>
+        <div className='hidden md:block'>
+          {/* improve this code by making it a component to remove code repeatition*/}
+          <List className='navList'>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Videos" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Blogs" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="About" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Events" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Partners" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Contact" />
+            </ListItem>
+            <ListItem className='navListItem' onClick={toggleDrawer}>
+              <ListItemText primary="Shop" />
+            </ListItem>
+          </List>
         </div>
-        <div>
-          <IconButton></IconButton>
+        <div className='md:hidden'>
+          <IconButton onClick={toggleDrawer}>
+            <MenuRoundedIcon sx={{color:'white'}} fontSize='large' />
+          </IconButton>
         </div>
+        
       </div>
+      <div className='md:hidden'>
+          <Drawer open={isDrawerOpen} anchor='top' onClose={toggleDrawer}>
+          <List>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Videos" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Blogs" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="About" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Events" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Partners" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Contact" />
+            </ListItem>
+            <ListItem button onClick={toggleDrawer}>
+              <ListItemText primary="Shop" />
+            </ListItem>
+          </List>
+          </Drawer>
+        </div>
     </div>
   ) 
 }
