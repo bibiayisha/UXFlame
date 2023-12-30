@@ -14,6 +14,7 @@ module.exports = {
         'red': '#FF3D54',
       },
       fontSize: {
+        'fs-11':'10px',
         'fs-12':'11px',
         'fs-13':'12px',
         'fs-14':'13px',

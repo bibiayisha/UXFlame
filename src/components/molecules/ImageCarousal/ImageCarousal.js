@@ -33,7 +33,7 @@ class ImageCarousal extends React.Component {
       };
   
       return (
-        <div className={`md:m-0 ${marginSpecific} md:px-8 md:pl-20   ${bgColor ? 'bg-offBlue md:pb-6 md:pt-14' : 'bg-darkBlue md:pb-28'} md:w-11/12 md:float-right md:overflow-hidden slider1 p-10 mt-0 mx-auto md:w-full`}>
+        <div className={` ${marginSpecific} md:px-8 md:pl-20   ${bgColor ? 'bg-offBlue md:pb-6 md:pt-14' : 'bg-darkBlue md:pb-28'} md:w-11/12 md:float-right md:overflow-hidden slider1 p-10  mx-auto `}>
           {bgColor ? null : (
             <>
               <div className="mb-4 text-center md:text-left">
