@@ -15,6 +15,7 @@ class NewVideosSlider extends React.Component {
       const settings = {
         dots: true,
         infinite: true,
+        arrows:true,
         speed: 100,
         slidesToShow:1,
         slidesToScroll: 1,
