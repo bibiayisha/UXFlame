@@ -1,0 +1,9 @@
+.social-text{
+    text-orientation: sideways-right;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+}
+.rotate-icon{
+    transform: rotate(-270deg);
+}
