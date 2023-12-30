@@ -1,15 +1,17 @@
 .slider2 .slick-prev {
- left: 338px !important;
- top: 89%;
-}
+    left: 338px !important;
+    top: 89%;
+    z-index: 10;
+    }
 .slider2 .slick-next {
     right: 90px !important;
     top: 89%;
+    z-index: 10;
   }
 .slider2 .slick-dots{
-bottom: 30px !important;
-left: 130px !important;
-}
+    bottom: 30px !important;
+    left: 130px !important;
+    }
 .slider2 .slick-dots li button:before{
     border-radius: 50% !important;
     opacity: 100% !important;
