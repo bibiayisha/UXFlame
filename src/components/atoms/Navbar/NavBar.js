@@ -5,6 +5,7 @@ import { IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 // App imports
 import images from '../../utils/constants'
+import './NavBar.css'
 
  function NavBar() {
 
@@ -15,7 +16,7 @@ import images from '../../utils/constants'
   }
 
   return (
-    <div className='w-full bg-transparent'>
+    <div className='w-full bg-transparent navbar'>
       <div className='flex items-center justify-between container mx-auto  py-4'>
         <div>
           <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
@@ -23,28 +24,28 @@ import images from '../../utils/constants'
         <div className='hidden md:block'>
           {/* improve this code by making it a component to remove code repeatition*/}
           <List className='navList'>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Home" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Videos" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem' >
               <ListItemText primary="Blogs" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="About" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Events" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Partners" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Contact" />
             </ListItem>
-            <ListItem className='navListItem' onClick={toggleDrawer}>
+            <ListItem className='navListItem'>
               <ListItemText primary="Shop" />
             </ListItem>
           </List>
