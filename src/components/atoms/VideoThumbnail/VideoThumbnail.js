@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import IconButton from '@mui/material/IconButton';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 
-const ThumbnailWithPlayButton = ({ thumbnailUrl, fontSize }) => {
+const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize }) => {
     return (
         <Grid container justifyContent="center" alignItems="center">
         <div className="relative text-center md:w-full w-max">
@@ -18,7 +18,7 @@ const ThumbnailWithPlayButton = ({ thumbnailUrl, fontSize }) => {
                 borderRadius: 'full',
               }}
             >
-              <PlayArrowRoundedIcon fontSize={fontSize} />
+              <PlayArrowRoundedIcon fontSize={'inherit'} style={{ width: iconSize, height: iconSize}} />
             </IconButton>
           </div>
         </div>

@@ -24,7 +24,7 @@ function VideoSection() {
         </Grid>
         <Grid item xs={12} md={6} lg={5}>
             <div className='h-full'>
-            <VideoThumbnail thumbnailUrl={images.body.latestVideo} fontSize={'large'}/>
+            <VideoThumbnail thumbnailUrl={images.body.latestVideo} iconSize={'2.5rem'}/>
             </div>
         </Grid>
         </Grid>

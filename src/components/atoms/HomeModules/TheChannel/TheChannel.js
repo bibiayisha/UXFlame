@@ -22,7 +22,7 @@ function TheChannel() {
                 </Grid>
             </div>
             <div className='margin'>
-                <VideoThumbnail thumbnailUrl={`${images.body.channel}`} fontSize={'large'}/>
+                <VideoThumbnail thumbnailUrl={`${images.body.channel}`} iconSize={'3rem'}/>
             </div>
         </div>
     </div>
