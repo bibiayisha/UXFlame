@@ -52,7 +52,10 @@ const theme = createTheme({
           fontSize: '12px',
           color: 'white',
           fontWeight:'600',
-          textTransform: 'uppercase'
+          textTransform: 'uppercase',
+          '&:hover': {
+            backgroundColor:'transparent',
+          }
         }
       }
     },
