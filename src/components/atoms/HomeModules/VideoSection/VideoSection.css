@@ -1,10 +1,18 @@
-.video-sec{
-    background: linear-gradient(to right, #fb8045 60%, #1b1b29 40%);
+.orange-bg{
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
 }
-
+.video-sec>.g{
+    z-index: 2;
+}
 /* Mobile responsiveness */
 @media only screen and (max-width: 600px) {
     .video-sec{
         background: linear-gradient(to right, #fb7f4500 60%, #fb7f4500 40%);
     }
   }
+

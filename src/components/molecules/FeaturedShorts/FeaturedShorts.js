@@ -39,12 +39,15 @@ class FeaturedShorts extends React.Component {
           <Slider {...settings}>
             {slides.map((slide, index) => (
               <div key={index} className="slide-container">
-                <div className="gradient-overlay"></div>
-                <img src={slide.imageurl} alt={`Slide ${index + 1}`} />
-                <div className="content-overlay p-6 w-6/12">
-                  <p className="text-fs-22 text-white font-semibold tracking-ls-neg leading-lh-24">{slide.heading}</p>
-                  <p className="text-fs-14 text-white font-regular mt-1.5">{slide.subtext}</p>
-                </div>
+                <a href="#">
+                  <div className="gradient-overlay"></div>
+                  <img src={slide.imageurl} alt={`Slide ${index + 1}`} />
+                  <div className="content-overlay p-6 w-6/12">
+                    <p className="text-fs-22 text-white font-semibold tracking-ls-neg leading-lh-24">{slide.heading}</p>
+                    <p className="text-fs-14 text-white font-regular mt-1.5">{slide.subtext}</p>
+                  </div>
+                  <div className="overlay"></div>
+                </a>
               </div>
             ))}
           </Slider>

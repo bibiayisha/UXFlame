@@ -5,6 +5,12 @@
   top: -10%; 
   left: -6.5%;
 }
+.slider1 .slick-prev:before{
+  content: url('../../../assets//media//images//arrow-slider.svg') !important;
+}
+.slider1 .slick-next:before{
+  content: url('../../../assets//media//images//arrow-slider-2.svg') !important;
+}
 .slider1 .slick-next {
     top: -10%; 
     left: -3.5%;

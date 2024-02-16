@@ -11,7 +11,7 @@ const images = {
         playBtn: require('../../assets/media/images/play button.svg').default,
         latestVideo: require('../../assets/media/images/latest video.svg').default,
         favicon: require('../../assets/media/images/favicon.svg').default,
-        channel: require('../../assets/media/images/channel.svg').default,
+        channel: require('../../assets/media/images/home-video-cover.svg').default,
     },
     slider1: {
         slide1:  require('../../assets/media/slides/slider1/slide1.svg').default,
