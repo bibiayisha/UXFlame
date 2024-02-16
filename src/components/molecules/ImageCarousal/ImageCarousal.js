@@ -18,16 +18,32 @@ class ImageCarousal extends React.Component {
         arrows: bgColor || false,
         infinite: true,
         speed: 500,
-        slidesToShow:slidesToShow || 5,
+        slidesToShow:slidesToShow || 6,
         slidesToScroll: 1,
         responsive: [
-          // {
-          //   breakpoint: 1800,
-          //   settings: {
-          //     slidesToShow: slidesToShow || 6,
-          //     slidesToScroll: 1,
-          //   },
-          // },
+          {
+            breakpoint: 1800,
+            settings: {
+              slidesToShow: slidesToShow || 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: slidesToShow || 5,
+              slidesToScroll: 1,
+            },
+          },
+          
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: slidesToShow || 4,
+              slidesToScroll: 1,
+            },
+          },
+
           {
             breakpoint: 1000, 
             settings: {
