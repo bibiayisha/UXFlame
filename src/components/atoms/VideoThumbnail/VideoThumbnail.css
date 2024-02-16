@@ -52,13 +52,13 @@
     }
     .special-text{
         transform: skewY(-6deg);
-        top: 15%;
+        top: 10%;
         left: 5%;
     }
   }
 
   
-@media (max-width: 1024px) {
+@media (min-width: 786px) and (max-width: 1024px) {
     .st1 {
         font-size:30px;
         line-height: 0px;
@@ -74,5 +74,12 @@
         transform: skewY(-6deg);
         top: 15%;
         left: 5%;
+    }
+  }
+
+  @media (max-width: 786px) {
+    .play-icon {
+      width: 2rem !important;
+      height: 2rem !important; 
     }
   }

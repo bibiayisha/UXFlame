@@ -8,6 +8,7 @@ import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import './VideoThumbnail.css'
 
 const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) => {
+  const isMobile = window.innerWidth <= 767;
     return (
         <Grid container justifyContent="center" alignItems="center">
         <div className="relative text-center md:w-full w-max overflow-hidden">
@@ -26,7 +27,10 @@ const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) =>
                   borderRadius: 'full',
                 }}
               >
-                <PlayArrowRoundedIcon fontSize={'inherit'} style={{ width: iconSize, height: iconSize}} />
+              <PlayArrowRoundedIcon
+                style={{ width: iconSize, height: iconSize }}
+                className='play-icon'
+              />
               </IconButton>
             </div>
           </a>
