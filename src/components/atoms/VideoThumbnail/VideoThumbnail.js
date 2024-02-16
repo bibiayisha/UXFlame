@@ -15,8 +15,8 @@ const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) =>
             <img src={thumbnailUrl} alt="Video Thumbnail" className="md:w-full w-max h-auto thumbnail-img" />
             { extra && 
             <div className="absolute transform -translate-x-1/2 -translate-y-1/2 special-text text-left">
-              <div className='st1'><span>Welcome to my</span></div>
-              <div className='st2'><span>UXflame Channel!</span></div>
+              <div ><span className='st1'>Welcome to my</span><br/>
+              <span className='st2'>UXflame Channel!</span></div>
               </div>}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <IconButton
