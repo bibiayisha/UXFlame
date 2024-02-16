@@ -21,7 +21,7 @@ function Home() {
     <Header/>
     </div>
     <div className=''>
-      <ImageCarousal slidesToShow={5} slides={slider1} marginSpecific={'md:-mt-40'} bgColor={true}/>
+      <ImageCarousal slides={slider1} marginSpecific={'md:-mt-40'} bgColor={true}/>
     </div>
     <NewVideos/>
     <TheChannel/>

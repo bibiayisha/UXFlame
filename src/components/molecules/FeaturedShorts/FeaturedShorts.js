@@ -24,11 +24,19 @@ class FeaturedShorts extends React.Component {
         centerPadding: '170px',
         responsive: [
           {
+            breakpoint: 1200, 
+            settings: {
+              slidesToShow: 3, 
+              slidesToScroll: 1,
+              centerPadding: '0px',
+            },
+          },
+          {
             breakpoint: 768, 
             settings: {
               slidesToShow: 1, 
               slidesToScroll: 1,
-              centerPadding: '50px',
+              centerPadding: '80px',
             },
           },
         ],

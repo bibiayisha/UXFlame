@@ -51,7 +51,7 @@ code {
   .container-md,
   .container-lg,
   .container-xl {
-    max-width: 1120px !important;
+    max-width: 1150px !important;
   }
 }
 
@@ -62,6 +62,6 @@ code {
   .container-lg,
   .container-xl,
   .container-xxl {
-    max-width: 1300px !important;
+    max-width: 1350px !important;
   }
 }
