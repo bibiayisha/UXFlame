@@ -54,7 +54,7 @@ class ImageCarousal extends React.Component {
           {
             breakpoint: 768, 
             settings: {
-              slidesToShow: 1, 
+              slidesToShow: 2, 
               slidesToScroll: 1,
               arrows: false, 
             },

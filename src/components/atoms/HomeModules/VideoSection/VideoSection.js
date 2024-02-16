@@ -11,7 +11,7 @@ function VideoSection() {
   return (
     <div className='bg-darkBlue py-20'>
         <div className='video-sec relative' >
-        <Grid container alignItems="stretch" className='g relative container pb-6 md:pb-0'>
+        <Grid container alignItems="stretch" className='g relative container pb-10 md:pb-0 bg-orange md:bg-transparent'>
         <Grid item xs={12} md={6} lg={7} >
             <div className='flex flex-col h-full justify-center  md:py-0 py-10 text-center md:text-left  bg-orange'>
             <div>
