@@ -56,3 +56,23 @@
         left: 5%;
     }
   }
+
+  
+@media (max-width: 1024px) {
+    .st1 {
+        font-size:30px;
+        line-height: 0px;
+        letter-spacing: -1px;
+
+    }
+    .st2 {
+        font-size:45px;
+        line-height: 62px;
+        letter-spacing: -2px;
+    }
+    .special-text{
+        transform: skewY(-6deg);
+        top: 15%;
+        left: 5%;
+    }
+  }
