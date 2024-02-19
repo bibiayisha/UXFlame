@@ -22,7 +22,9 @@
 .slide-spacing{
   padding-right: 20px !important;
 }
-
+.slider1 .slic-slide{
+  width: min-content !important;
+}
 /* Mobile respnsiveness */
 @media screen and (max-width: 768px) {
   .slide-spacing{
