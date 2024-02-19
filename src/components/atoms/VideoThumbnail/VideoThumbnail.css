@@ -1,7 +1,7 @@
 .thumbnail:hover{
     background-color:rgba(27, 27, 24 ,1);
 }
-.thumbnail-img:hover {
+.thumbnail:hover>.thumbnail-img {
     opacity: 0.75;
     transform: scale(1.1);
   }
