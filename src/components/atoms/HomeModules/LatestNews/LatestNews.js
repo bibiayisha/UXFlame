@@ -8,7 +8,7 @@ import { news } from '../../../utils/NewsData'
 
 function LatestNews() {
   return (
-    <div className='bg-darkBlue py-40'>
+    <div className='bg-darkBlue py-20 md:py-40'>
         <div className='container '>
             <div className='flex md:flex-row flex-col justify-between md:items-start items-center align-top mb-20 text-center md:text-left'>
                 <div className='flex flex-col '>
