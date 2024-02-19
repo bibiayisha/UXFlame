@@ -30,8 +30,11 @@
     box-shadow:
     0 0 0 2px #1b1b29,  0 0 0 4px rgb(228, 54, 54);
 }
-
-@media screen and (max-width: 1024px)  {
+.slider2>.slick-slider{
+    position: relative;
+    width: -webkit-fill-available !important;
+}
+@media screen and (max-width: 1024px) and (min-width: 786px)  {
     .slider2 .slick-prev {
         left: 63% !important;
         top: 83%;
@@ -42,6 +45,22 @@
     }
     .slider2 .slick-dots {
         bottom: 11% !important;
-        left: 33% !important;
+        left: 58% !important;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px)  {
+    .slider2 .slick-prev {
+        left: 63% !important;
+        top: 83%;
+        }
+    .slider2 .slick-next {
+        right: 0 !important;
+        top: 83%;
+    }
+    .slider2 .slick-dots {
+        bottom: 11% !important;
+        left: 55% !important;
+        width: 50%;
     }
 }

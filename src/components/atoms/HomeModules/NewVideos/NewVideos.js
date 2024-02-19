@@ -11,7 +11,7 @@ function NewVideos() {
   return (
     <div className='bg-darkBlue '>
       <Grid className='container py-28' container spacing={{ sm:0, md: 7 }}>
-        <Grid item xs={12} md={6} lg={7}>
+        <Grid item xs={12} md={6} lg={7} >
           <NewVideosSlider slides={slider2}/>
         </Grid>
         <Grid item xs={12} md={6} lg={5}>

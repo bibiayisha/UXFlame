@@ -11,7 +11,7 @@ function FShortsSection() {
   return (
     <div className='bg-darkBlue md:pt-96 pt-10 pb-32'>
         <div className=''>
-            <div className='container flex flex-col justify-center items-center md:pb-28 pb-0 pt-28'>
+            <div className='container flex flex-col justify-center items-center md:pb-28 pb-10 pt-28'>
                 <div><p className='uppercase text-gray text-fs-16 mb-4 '>60 SECONDS CRAFT</p></div>
                 <div className='text-white text-center'><Typography variant='h2'>Featured Shorts</Typography></div>
             </div>
