@@ -1,3 +1,34 @@
 .navbar{
     height: 50px;
 }
+@media screen and (max-width: 1024px) {
+    .navbar-menu{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed !important;
+    top: 80px;
+    right: -1000px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    z-index: 1000;
+    padding: 10px 10px !important;
+    }
+    .navListItem{
+        padding: 15px 10px !important;
+        color: rgb(27 27 41 ) !important;
+        font-weight: 700 !important;
+        font-size: 18px !important;
+        border-bottom: 1px solid #cecdd8;
+    }
+    .navListItem:hover{
+        color: rgb(251 128 69) !important;
+        border-bottom: 1px solid #cecdd8 !important;
+    }
+    .navbar-menu.active{
+        right: 0px !important;
+    }
+}
