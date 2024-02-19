@@ -26,6 +26,9 @@
 /* Mobile respnsiveness */
 @media screen and (max-width: 768px) {
   .slide-spacing{
-    padding-right: 0px !important;
+    padding-right: 10px !important;
   }
+  .slider1 .slick-list{
+    margin-right: 0%;
+}
 }

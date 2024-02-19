@@ -1,16 +1,22 @@
 .slider2 .slick-prev {
-    left: 338px !important;
-    top: 89%;
+    left: 58% !important;
+    top: 88.5%;
     z-index: 10;
     }
 .slider2 .slick-next {
-    right: 90px !important;
-    top: 89%;
+    right: 14% !important;
+    top: 88.5%;
     z-index: 10;
   }
 .slider2 .slick-dots{
-    bottom: 30px !important;
-    left: 130px !important;
+    bottom: 7% !important;
+    left: 23% !important;
+    }
+.slider2 .slick-prev:before{
+    content: url('../../../assets//media//images//arrow-slider.svg') !important;
+    }
+    .slider2 .slick-next:before{
+    content: url('../../../assets//media//images//arrow-slider-2.svg') !important;
     }
 .slider2 .slick-dots li button:before{
     border-radius: 50% !important;
@@ -23,4 +29,19 @@
 .slider2 .slick-dots li.slick-active button:before{
     box-shadow:
     0 0 0 2px #1b1b29,  0 0 0 4px rgb(228, 54, 54);
+}
+
+@media screen and (max-width: 1024px)  {
+    .slider2 .slick-prev {
+        left: 63% !important;
+        top: 83%;
+        }
+    .slider2 .slick-next {
+        right: 0 !important;
+        top: 83%;
+    }
+    .slider2 .slick-dots {
+        bottom: 11% !important;
+        left: 33% !important;
+    }
 }

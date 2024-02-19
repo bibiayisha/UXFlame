@@ -8,6 +8,7 @@ import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import './VideoThumbnail.css'
 
 const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) => {
+  const isMobile = window.innerWidth <= 767;
     return (
         <Grid container justifyContent="center" alignItems="center">
         <div className="relative text-center md:w-full w-max overflow-hidden">
@@ -15,8 +16,8 @@ const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) =>
             <img src={thumbnailUrl} alt="Video Thumbnail" className="md:w-full w-max h-auto thumbnail-img" />
             { extra && 
             <div className="absolute transform -translate-x-1/2 -translate-y-1/2 special-text text-left">
-              <div className='st1'><span>Welcome to my</span></div>
-              <div className='st2'><span>UXflame Channel!</span></div>
+              <div ><span className='st1'>Welcome to my</span><br/>
+              <span className='st2'>UXflame Channel!</span></div>
               </div>}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <IconButton
@@ -26,7 +27,10 @@ const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) =>
                   borderRadius: 'full',
                 }}
               >
-                <PlayArrowRoundedIcon fontSize={'inherit'} style={{ width: iconSize, height: iconSize}} />
+              <PlayArrowRoundedIcon
+                style={{ width: iconSize, height: iconSize }}
+                className='play-icon'
+              />
               </IconButton>
             </div>
           </a>
