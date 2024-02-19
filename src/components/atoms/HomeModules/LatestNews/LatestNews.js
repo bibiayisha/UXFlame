@@ -21,7 +21,8 @@ function LatestNews() {
             </div>
             <Grid container spacing={4}>
             {news.slice(0, 3).map((item, index) => (
-                <Grid item xs={12} md={4} lg={4}>
+                <Grid item xs={12} md={4} lg={4} className='pb-10 md:pb-20 lg:pb-0'>
+                    <a href='#'>
                     <div className='relative md:mb-0 mb-20'>
                         <div><img src={item.imageUrl} /></div>
                         <div className='-mt-20 absolute'>
@@ -32,6 +33,7 @@ function LatestNews() {
                             </div>
                         </div>
                     </div>
+                    </a>
                 </Grid>
             ))}
             </Grid>
