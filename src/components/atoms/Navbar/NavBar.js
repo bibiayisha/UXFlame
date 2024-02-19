@@ -1,8 +1,9 @@
 // React imports
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 // Third party imports
 import { IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 // App imports
 import images from '../../utils/constants'
 import './NavBar.css'
@@ -14,6 +15,18 @@ import './NavBar.css'
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen)
   }
+  useEffect(() => {
+    if (isDrawerOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cleanup the effect
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isDrawerOpen]);
 
   return (
     <div className='w-full bg-transparent navbar'>
@@ -21,9 +34,8 @@ import './NavBar.css'
         <div>
           <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
         </div>
-        <div className='hidden md:block'>
-          {/* improve this code by making it a component to remove code repeatition*/}
-          <List className='navList'>
+        <div className=''>
+          <List className={` ${isDrawerOpen ? 'active' : ''} navList navbar-menu`}>
             <ListItem className='navListItem'>
               <ListItemText primary="Home" />
             </ListItem>
@@ -50,15 +62,17 @@ import './NavBar.css'
             </ListItem>
           </List>
         </div>
-        <div className='md:hidden'>
-          <IconButton onClick={toggleDrawer}>
-            <MenuRoundedIcon sx={{color:'white'}} fontSize='large' />
-          </IconButton>
-        </div>
-        
+        <div className='lg:hidden block'>
+        <IconButton onClick={toggleDrawer}>
+        {isDrawerOpen ? (
+          <CloseRoundedIcon sx={{ color: 'white' }} fontSize="large" />
+        ) : (
+          <MenuRoundedIcon sx={{ color: 'white' }} fontSize="large" />
+        )}
+      </IconButton>
       </div>
-      <div className='md:hidden'>
-          <Drawer open={isDrawerOpen} anchor='top' onClose={toggleDrawer}>
+      {/* <div className='md:hidden'>
+          <Drawer open={isDrawerOpen} anchor='right' onClose={toggleDrawer}>
           <List>
             <ListItem button onClick={toggleDrawer}>
               <ListItemText primary="Home" />
@@ -86,7 +100,8 @@ import './NavBar.css'
             </ListItem>
           </List>
           </Drawer>
-        </div>
+        </div> */}
+    </div>
     </div>
   ) 
 }

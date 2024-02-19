@@ -7,3 +7,8 @@
 .rotate-icon{
     transform: rotate(-270deg);
 }
+@media screen and (max-width: 1024px) {
+    .rotate-icon{
+        transform: rotate(180deg);
+    }
+}
