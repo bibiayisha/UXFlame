@@ -15,7 +15,7 @@ function Footer() {
   return (
     <div className='bg-darkBlue'>
         <Grid className='container py-20 text-center md:text-left' container >
-            <Grid item xs={12} md={6} lg={3} >
+            <Grid item xs={12} md={6} lg={3}  className='px-10 lg:px-0  pb-8 lg:pb-0 '>
               <div className='mb-1.5'><img width={'70px'} src={images.footer.youtube} className='mx-auto md:mx-0' /></div>
               <div><img width={'150px'} src={images.header.logo} className='mx-auto md:mx-0' /></div>
               <div className='my-9'><p className='text-fs-14 tracking-ls-neg text-gray'>Bringing you the best unboxing videos of the latest technology, games and toys!</p></div>
@@ -26,7 +26,7 @@ function Footer() {
                 <div><a><YouTubeIcon fontSize='medium' className='icons-color mr-4' /></a></div>
               </div>
             </Grid>
-            <Grid item xs={12} md={6} lg={4} className='md:pl-10 pl-0'>
+            <Grid item xs={12} md={6} lg={4} className='py-8 lg:py-0 lg:pl-10 pl-0'>
               <div className='md:px-10 px-20 md:my-0 my-10'>
                 <div>
                   <p className='text-fs-18 tracking-ls-neg2 text-white font-semibold'>Unbox Links</p>
@@ -51,8 +51,8 @@ function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} md={6} lg={5} className='md:pl-10 pl-0'>
-            <div>
+            <Grid item xs={12} md={12} lg={5} className=' '>
+            <div className='py-10 xl:py-0 '>
               <div>
                 <p className='text-fs-18 tracking-ls-neg2 text-white font-semibold'>Subs Live Count</p>
               </div>
