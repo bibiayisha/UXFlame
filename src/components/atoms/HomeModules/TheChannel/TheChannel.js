@@ -11,10 +11,10 @@ import './TheChannel.css'
 function TheChannel() {
   return (
     <div className='bg-offBlue py-40 relative'>
-        <div className='absolute z-0 right-0 lg:mt-[-12%] md:mt-[-22%] mt-[-38%]'>
+        <div className='absolute z-0 right-0 lg:mt-[-12%] md:mt-[-22%] mt-[-38%] xl:mt-[-9%]'>
             <img src={images.body.bgBoxes}/>
         </div>
-        <div className='flex items-center justify-center absolute md:top-[-2%] top-[-0%] left-[-38.5%] md:left-[6%] lg:left-[44%] lg:top-[0%] z-50 aspect-square w-[70px] md:w-[120px] lg:w-[120px] translate-x-[380px] -translate-y-[25px] rotate-45 rounded-md md:rounded-xl lg:rounded-2xl bg-orange '>
+        <div className='flex items-center justify-center absolute md:top-[-2%] top-[-0%] xl:top-[-45%] left-[-38.5%] md:left-[6%] lg:left-[44%] xl:left-[55%] lg:top-[0%] z-50 aspect-square w-[70px] md:w-[120px] lg:w-[120px] translate-x-[380px] -translate-y-[25px] rotate-45 rounded-md md:rounded-xl lg:rounded-2xl bg-orange '>
             <PlayArrowRoundedIcon sx={{ color: 'white', width: '4rem', height: '4rem', transform: 'rotate(-45deg)' }} />
         </div>
         <div className='container text-center md:text-left relative z-20'>
