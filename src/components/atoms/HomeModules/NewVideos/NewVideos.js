@@ -9,13 +9,13 @@ import NewVideosSlider from '../../../molecules/NewVideosSlider/NewVideosSlider'
 
 function NewVideos() {
   return (
-    <div className='bg-darkBlue '>
+    <div className='bg-darkBlue relative z-10'>
       <Grid className='container py-28' container spacing={{ sm:0, md: 7 }}>
         <Grid item xs={12} md={6} lg={7} >
           <NewVideosSlider slides={slider2}/>
         </Grid>
         <Grid item xs={12} md={6} lg={5}>
-          <div className='md:mt-0 mt-20 md:text-left text-center'>
+          <div className='md:mt-20 mt-20 md:text-left text-center'>
             <div><p className='text-fs-24 text-white font-light'>New Videos!</p></div>
             <div className='mt-1 mb-10'><Typography variant='h3' className='text-white'>Every Friday <br/>at 9PM</Typography></div>
             <div className='mb-5 flex md:flex-row flex-col justify-between md:items-start items-center w-full md:w-11/12'>
