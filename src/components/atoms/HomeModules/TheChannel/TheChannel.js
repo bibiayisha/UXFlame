@@ -2,6 +2,7 @@
 import React from 'react'
 // Third party imports
 import { Typography, Grid } from '@mui/material'
+import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 // App imports
 import VideoThumbnail from '../../VideoThumbnail/VideoThumbnail'
 import images from '../../../utils/constants'
@@ -9,8 +10,14 @@ import './TheChannel.css'
 
 function TheChannel() {
   return (
-    <div className='bg-offBlue py-40'>
-        <div className='container text-center md:text-left'>
+    <div className='bg-offBlue py-40 relative'>
+        <div className='absolute z-0 right-0 lg:mt-[-12%] md:mt-[-22%] mt-[-38%]'>
+            <img src={images.body.bgBoxes}/>
+        </div>
+        <div className='flex items-center justify-center absolute md:top-[-2%] top-[-0%] left-[-38.5%] md:left-[6%] lg:left-[44%] lg:top-[0%] z-50 aspect-square w-[70px] md:w-[120px] lg:w-[120px] translate-x-[380px] -translate-y-[25px] rotate-45 rounded-md md:rounded-xl lg:rounded-2xl bg-orange '>
+            <PlayArrowRoundedIcon sx={{ color: 'white', width: '4rem', height: '4rem', transform: 'rotate(-45deg)' }} />
+        </div>
+        <div className='container text-center md:text-left relative z-20'>
             <div className='md:mb-20 mb-10 '>
                 <div className='mb-5'><p className='text-gray text-fs-16 uppercase'>UnBox Vlogs</p></div>
                 <div className='text-white'><Typography variant='h2'>The Channel</Typography></div>
