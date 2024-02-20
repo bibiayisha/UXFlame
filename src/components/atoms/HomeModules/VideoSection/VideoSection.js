@@ -6,6 +6,7 @@ import { Grid, Typography } from '@mui/material'
 import './VideoSection.css'
 import images from '../../../utils/constants'
 import VideoThumbnail from '../../VideoThumbnail/VideoThumbnail'
+import { mostViewedVideo } from '../../../utils/specialVars'
 
 function VideoSection() {
   return (
@@ -24,7 +25,7 @@ function VideoSection() {
         </Grid>
         <Grid item xs={12} md={6} lg={5}>
             <div className='h-full '>
-            <VideoThumbnail thumbnailUrl={images.body.latestVideo} iconSize={'2.5rem'}/>
+            <VideoThumbnail thumbnailUrl={mostViewedVideo.image} iconSize={'2.5rem'} href={mostViewedVideo.videoLink}/>
             </div>
         </Grid>
         </Grid>

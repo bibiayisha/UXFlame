@@ -7,12 +7,12 @@ import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 // App imports
 import './VideoThumbnail.css'
 
-const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href='#' }) => {
+const ThumbnailWithPlayButton = ({ thumbnailUrl, iconSize, extra, href }) => {
   const isMobile = window.innerWidth <= 767;
     return (
         <Grid container justifyContent="center" alignItems="center">
         <div className="relative text-center md:w-full w-max overflow-hidden">
-          <a className='thumbnail' href={href}>
+          <a className='thumbnail' href={href} target="_blank" rel="noopener noreferrer">
             <img src={thumbnailUrl} alt="Video Thumbnail" className="md:w-full w-max h-auto thumbnail-img" />
             { extra && 
             <div className="absolute transform -translate-x-1/2 -translate-y-1/2 special-text text-left">

@@ -47,7 +47,7 @@ class FeaturedShorts extends React.Component {
           <Slider {...settings}>
             {slides.map((slide, index) => (
               <div key={index} className="slide-container">
-                <a href="#">
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">
                   <div className="gradient-overlay"></div>
                   <img src={slide.imageurl} alt={`Slide ${index + 1}`} />
                   <div className="content-overlay p-6 w-6/12">
