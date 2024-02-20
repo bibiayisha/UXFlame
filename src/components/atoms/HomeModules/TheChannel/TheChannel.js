@@ -7,6 +7,7 @@ import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
 import VideoThumbnail from '../../VideoThumbnail/VideoThumbnail'
 import images from '../../../utils/constants'
 import './TheChannel.css'
+import { channelVideo } from '../../../utils/specialVars';
 
 function TheChannel() {
   return (
@@ -29,7 +30,7 @@ function TheChannel() {
                 </Grid>
             </div>
             <div className='margin'>
-                <VideoThumbnail thumbnailUrl={`${images.body.channel}`} iconSize={'4rem'} extra={true}/>
+                <VideoThumbnail thumbnailUrl={channelVideo.image} iconSize={'4rem'} extra={true} href={channelVideo.videoLink}/>
             </div>
         </div>
     </div>

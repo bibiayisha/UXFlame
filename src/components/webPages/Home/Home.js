@@ -1,7 +1,7 @@
 // React imports
 import React from 'react'
 // App imports
-import { slider1 } from '../../utils/SlidesData'
+import { slider1, slider3 } from '../../utils/SlidesData'
 import Header from '../../atoms/HomeModules/Header/Header'
 import ImageCarousal from '../../molecules/ImageCarousal/ImageCarousal'
 import NavBar from '../../atoms/Navbar/NavBar'
@@ -27,7 +27,7 @@ function Home() {
     <TheChannel/>
     <div className='bg-darkBlue md:py-40 py-0'></div>
     <div className=''>
-      <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Latest Videos'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
+      <ImageCarousal slidesToShow={4} slides={slider3} bigHeading={'Latest Videos'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
     </div>
     <div className=''>
       <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Featured Gaming'} smallHeading={'UnBox Vlogs'} bgColor={false}/>

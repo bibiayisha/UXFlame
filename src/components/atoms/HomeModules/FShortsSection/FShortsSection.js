@@ -19,7 +19,11 @@ function FShortsSection() {
                 <FeaturedShorts slides={FShorts}/>
             </div>
             <div className='container text-center md:text-left'>
-                <Button variant='text' startIcon={<img width={'15px'} src={images.body.playBtn}/>}>Browse all playlists</Button>
+                <Button variant='text' startIcon={<img width={'15px'} src={images.body.playBtn}/>}>  
+                <a href="https://www.youtube.com/@UXFlame" target="_blank" rel="noopener noreferrer">
+                    Browse all playlists
+                </a>
+                </Button>
             </div>
         </div>
     </div>

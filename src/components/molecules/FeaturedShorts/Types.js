@@ -5,7 +5,7 @@ export const FeaturedShortsProps = {
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       imageurl: PropTypes.string.isRequired,
-      // videoLink: PropTypes.string,
+      link: PropTypes.string,
       heading: PropTypes.string.isRequired,
       subtext: PropTypes.string.isRequired,
     })

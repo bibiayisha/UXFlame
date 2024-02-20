@@ -4,7 +4,7 @@ import React from 'react'
 import images from '../../../utils/constants'
 import { Typography } from '@mui/material'
 import './Subscribers.css'
-import { count } from '../../../utils/subscribersCount'
+import { count } from '../../../utils/specialVars'
 
 function Subscribers() {
   return (

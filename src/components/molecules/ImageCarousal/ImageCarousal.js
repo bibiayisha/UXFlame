@@ -77,7 +77,7 @@ class ImageCarousal extends React.Component {
           <Slider {...settings}>
             {slides.map((slide, index) => (
               <div  key={index} className="slide-spacing text-center md:text-left">
-                <VideoThumbnail thumbnailUrl={slide.imageurl} iconSize={'2rem'}/>
+                <VideoThumbnail thumbnailUrl={slide.imageurl} iconSize={'2rem'} href={slide.videoLink}/>
                 <h3 className={`mt-4 ${bgColor? 'text-fs-16 leading-lh-16':'text-fs-18 leading-lh-24 mb-2'}  text-white font-semibold w-11/12 `}>{slide.heading}</h3>
                 <p className={`mt-1 text-gray  ${bgColor? 'text-fs-13':'text-fs-14'} leading-lh-16`}>{slide.subtext}</p>
               </div>

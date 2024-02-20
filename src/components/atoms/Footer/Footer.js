@@ -9,7 +9,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 // App imports
 import images from '../../utils/constants';
 import './Footer.css'
-import { count } from '../../utils/subscribersCount';
+import { count } from '../../utils/specialVars';
 
 function Footer() {
   return (

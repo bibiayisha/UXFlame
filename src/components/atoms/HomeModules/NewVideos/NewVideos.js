@@ -24,7 +24,11 @@ function NewVideos() {
             </div>
             <div className='w-11/12'><p className='text-gray text-fs-18 tracking-ls-neg2 leading-lh-32'>We really appreaciate all your comments, likes and suggestions, so keep em coming!</p></div>
             <div className='my-8'>
-              <Button variant='text' startIcon={<img width={'15px'} src={images.body.playBtn}/>}>See All Videos</Button>
+              <Button variant='text' startIcon={<img width={'15px'} src={images.body.playBtn}/>}>
+              <a href="https://www.youtube.com/@UXFlame" target="_blank" rel="noopener noreferrer">
+                See All Videos
+              </a>
+              </Button>
             </div>
           </div>
         </Grid>
