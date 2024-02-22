@@ -6,6 +6,7 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 // App imports
 import images from '../../utils/constants';
 import './Footer.css'
@@ -20,10 +21,11 @@ function Footer() {
               <div><img width={'150px'} src={images.header.logo} className='mx-auto md:mx-0' /></div>
               <div className='my-9'><p className='text-fs-14 tracking-ls-neg text-gray'>Bringing you the best unboxing videos of the latest technology, games and toys!</p></div>
               <div className='flex flex-row justify-center md:justify-start'>
-                <div><a><FacebookRoundedIcon fontSize='small' className='icons-color mr-4' /></a></div>
-                <div><a><TwitterIcon fontSize='small' className='icons-color mr-4' /></a></div>
-                <div><a><InstagramIcon fontSize='small' className='icons-color mr-4' /></a></div>
-                <div><a><YouTubeIcon fontSize='medium' className='icons-color mr-4' /></a></div>
+                <div><a target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/@UXFlame'><YouTubeIcon fontSize='medium' className='icons-color mr-4' /></a></div>
+                <div><a target="_blank" rel="noopener noreferrer" href='https://www.pinterest.com/uxflame/'><PinterestIcon fontSize='small' className='icons-color mr-4' /></a></div>
+                <div><a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/uxflame?igsh=ZTIwbW8xMGR5Ym13'><InstagramIcon fontSize='small' className='icons-color mr-4' /></a></div>
+                <div><a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/uxflame'><FacebookRoundedIcon fontSize='small' className='icons-color mr-4' /></a></div>
+                <div><a target="_blank" rel="noopener noreferrer" href='https://twitter.com/ux_flame'><TwitterIcon fontSize='small' className='icons-color mr-4' /></a></div>
               </div>
             </Grid>
             <Grid item xs={12} md={6} lg={4} className='py-8 lg:py-0 lg:pl-10 pl-0'>
