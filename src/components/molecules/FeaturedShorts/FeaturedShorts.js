@@ -22,6 +22,11 @@ class FeaturedShorts extends React.Component {
         slidesToScroll: 1,
         autoplaySpeed: 1500,
         autoplay:true,
+        touchThreshold: 10, 
+        swipe: true, 
+        swipeToSlide: true,
+        draggable: true, 
+        respondTo: 'window',
         centerMode: true,
         centerPadding: '170px',
         responsive: [

@@ -20,6 +20,11 @@ class ImageCarousal extends React.Component {
         speed: 500,
         autoplaySpeed: 1500,
         autoplay:true,
+        touchThreshold: 10, 
+        swipe: true, 
+        swipeToSlide: true,
+        draggable: true, 
+        respondTo: 'window',
         slidesToShow:slidesToShow || 6,
         slidesToScroll: 1,
         responsive: [
