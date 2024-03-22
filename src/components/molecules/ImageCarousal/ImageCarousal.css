@@ -3,7 +3,7 @@
 }
 .slider1 .slick-prev {
   top: -10%; 
-  left: -6.5%;
+  left: -4vw;
 }
 .slider1 .slick-prev:before{
   content: url('../../../assets//media//images//arrow-slider.svg') !important;
@@ -13,7 +13,7 @@
 }
 .slider1 .slick-next {
     top: -10%; 
-    left: -3.5%;
+    left: -1vw;
   }
 .slider1 img {
   width: 100%;
