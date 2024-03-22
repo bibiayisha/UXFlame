@@ -18,6 +18,8 @@ class ImageCarousal extends React.Component {
         arrows: bgColor || false,
         infinite: true,
         speed: 500,
+        autoplaySpeed: 1500,
+        autoplay:true,
         slidesToShow:slidesToShow || 6,
         slidesToScroll: 1,
         responsive: [
@@ -63,7 +65,7 @@ class ImageCarousal extends React.Component {
       };
   
       return (
-        <div className={` ${marginSpecific} md:px-8 md:pl-20   ${bgColor ? 'bg-offBlue md:pb-6 md:pt-14 w-full md:w-[700px] lg:w-[1050px] xl:w-[1150px] 2xl:w-[1350px]' : 'bg-darkBlue md:pb-28 w-full md:w-[768px] lg:w-[1200px] xl:w-[1280px] 2xl:w-[1536px]'}  md:float-right md:overflow-hidden slider1 p-10  mx-auto relative z-40`}>
+        <div className={` ${marginSpecific} md:px-8 md:pl-20   ${bgColor ? 'bg-offBlue md:pb-6 md:pt-14 w-full md:w-[90vw]' : 'bg-darkBlue md:pb-28 w-full md:w-[90vw]'}  md:float-right md:overflow-hidden slider1 p-10  mx-auto relative z-40`}>
           {bgColor ? null : (
             <>
               <div className="mb-4 text-center md:text-left">

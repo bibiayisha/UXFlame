@@ -20,6 +20,8 @@ class FeaturedShorts extends React.Component {
         speed: 100,
         slidesToShow:3,
         slidesToScroll: 1,
+        autoplaySpeed: 1500,
+        autoplay:true,
         centerMode: true,
         centerPadding: '170px',
         responsive: [
