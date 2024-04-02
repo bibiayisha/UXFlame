@@ -27,10 +27,10 @@ function Home() {
     <TheChannel/>
     <div className='bg-darkBlue md:py-40 py-0'></div>
     <div className=''>
-      <ImageCarousal slidesToShow={4} slides={slider3} bigHeading={'Latest Videos'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
+      <ImageCarousal slidesToShow={4} slides={slider3} bigHeading={'Design Tutorials'} smallHeading={'Learn design science with DesignLab'} bgColor={false}/>
     </div>
     <div className=''>
-      <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Featured Gaming'} smallHeading={'UnBox Vlogs'} bgColor={false}/>
+      <ImageCarousal slidesToShow={4} slides={slider1} bigHeading={'Coding Tutorials'} smallHeading={'Design to Development Learning with DevLab'} bgColor={false}/>
     </div>
     <FShortsSection/>
     <Subscribers/>

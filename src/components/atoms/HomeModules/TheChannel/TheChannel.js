@@ -20,13 +20,13 @@ function TheChannel() {
         </div>
         <div className='container text-center md:text-left relative z-20'>
             <div className='md:mb-20 mb-10 '>
-                <div className='mb-5'><p className='text-gray text-fs-16 uppercase'>UnBox Vlogs</p></div>
+                <div className='mb-5'><p className='text-gray text-fs-16 uppercase'>DesignLab & Devlab</p></div>
                 <div className='text-white'><Typography variant='h2'>The Channel</Typography></div>
             </div>
             <div className='mb-20'>
                 <Grid container spacing={{sm:0,md:10}}>
-                    <Grid item xs={12} md={6} lg={6} ><p className='text-white text-fs-34 md:mb-0 mb-4'>Check out the newest in gaming, technology, toys and more!</p></Grid>
-                    <Grid item xs={12} md={6} lg={6} ><p className='text-gray text-fs-18 leading-lh-32'>I’ll show you everything you need to know before buying your product! Quality of the packaging and items, accesories, bonus elements, downlodable content, and more! Check all out to make an informed decision before spending anything.</p></Grid>
+                    <Grid item xs={12} md={6} lg={6} ><p className='text-white text-fs-34 md:mb-0 mb-4 w-full md:w-8/12 tracking-ls-neg3'>Explore the latest in design, coding, technology, tools, and more!</p></Grid>
+                    <Grid item xs={12} md={6} lg={6} ><p className='text-gray text-fs-18 leading-lh-32 tracking-ls-neg4'>Dive into <a href='https://www.youtube.com/c/uxflame' target='_blank' className='text-orange underline'>UXFLAME</a>,  DesignLab for Figma tutorials and UX design insights, crafting captivating experiences. In DevLab, master coding, from beginner tutorials to advanced techniques, turning ideas into reality. Experience creativity and innovation in one place.</p></Grid>
                 </Grid>
             </div>
             <div className='margin'>
