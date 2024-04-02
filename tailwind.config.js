@@ -36,7 +36,9 @@ module.exports = {
       },
       letterSpacing: {
         'ls-neg':'-0.84px',
-        'ls-neg2':'-0.4px'
+        'ls-neg2':'-0.4px',
+        'ls-neg3':'-1.7px',
+        'ls-neg4':'-0.9px',
       }
     },
   },

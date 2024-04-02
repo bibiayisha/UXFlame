@@ -12,7 +12,7 @@ function LatestNews() {
         <div className='container '>
             <div className='flex md:flex-row flex-col justify-between md:items-start items-center align-top mb-20 md:mb-0 text-center md:text-left'>
                 <div className='flex flex-col '>
-                    <div className='mb-3'><p className='text-fs-16 text-gray leading-lh-24 uppercase'>Unbox vlogs</p></div>
+                    <div className='mb-3'><p className='text-fs-16 text-gray leading-lh-24 uppercase'>UXFLAME BLogs and news</p></div>
                     <div className='text-white'><Typography variant='h2'>Latest News</Typography></div>
                 </div>
                 <div className='mx-auto md:mx-0 md:mt-0 mt-4'>
