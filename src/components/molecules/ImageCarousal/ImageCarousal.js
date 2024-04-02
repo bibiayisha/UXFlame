@@ -1,7 +1,7 @@
 // React imports
 import React, { Component } from "react";
 // Third party import
-import {Box, Typography} from '@mui/material'
+import {Typography} from '@mui/material'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
