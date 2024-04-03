@@ -9,7 +9,7 @@ import SocialIcons from '../../SocialIconsBar/SocialIcons'
 function Header() {
   return (
     <div className='bg-transparent w-full '>
-      <div className='md:pt-24 md:pb-40 pt-20 pb-20'>
+      <div className='md:pt-18 md:pb-40 pt-20 pb-20'>
         <Grid container justifyContent="center" alignItems='center'>
         <Grid item xs={1}>
             <div className='flex justify-center items-center h-full'>

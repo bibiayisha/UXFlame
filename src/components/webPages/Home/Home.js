@@ -15,9 +15,8 @@ import TheChannel from '../../atoms/HomeModules/TheChannel/TheChannel'
 
 function Home() {
   return (
-    <>
-    <div className='header-section'>
-    <NavBar/>
+    <div >
+    <div className='header-section md:mt-[-8%] md:pt-[8%] mt-[-14%] pt-[14%]'>
     <Header/>
     </div>
     <div className=''>
@@ -36,7 +35,7 @@ function Home() {
     <Subscribers/>
     <LatestNews/>
     <VideoSection/>
-    </>
+    </div>
   )
 }
 

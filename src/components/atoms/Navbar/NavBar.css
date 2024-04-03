@@ -1,5 +1,18 @@
 .navbar{
-    height: 50px;
+}
+.link{
+    color: #ffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    text-decoration:none;
+    width: max-content;
+   }
+.link:hover{
+    color:rgb(251 128 69) !important;
+    cursor:pointer;
+}
+a.active{
+    border-bottom:2px solid white !important;
 }
 @media screen and (max-width: 1024px) {
     .navbar-menu{
@@ -22,11 +35,9 @@
         color: rgb(27 27 41 ) !important;
         font-weight: 700 !important;
         font-size: 18px !important;
-        border-bottom: 1px solid #cecdd8;
     }
-    .navListItem:hover{
-        color: rgb(251 128 69) !important;
-        border-bottom: 1px solid #cecdd8 !important;
+    .navListItem:active{
+        /* border-bottom: 1px solid #cecdd8 !important; */
     }
     .navbar-menu.active{
         right: 0px !important;
