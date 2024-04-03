@@ -1,14 +1,15 @@
 // React imports
 import React, { useState, useEffect } from 'react';
+import {NavLink} from 'react-router-dom'
 // Third party imports
-import { IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material'
+import { IconButton, List, ListItem } from '@mui/material'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 // App imports
 import images from '../../utils/constants'
 import './NavBar.css'
 
- function NavBar() {
+ function NavBar(props) {
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
 
@@ -29,7 +30,7 @@ import './NavBar.css'
   }, [isDrawerOpen]);
 
   return (
-    <div className='w-full bg-transparent navbar'>
+    <div className= {`w-full h-full navbar ${props.bgcolor ? 'bg-darkBlue':'bg-transparent'}`}>
       <div className='flex items-center justify-between container mx-auto  py-4'>
         <div>
           <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
@@ -37,28 +38,22 @@ import './NavBar.css'
         <div className=''>
           <List className={` ${isDrawerOpen ? 'active' : ''} navList navbar-menu`}>
             <ListItem className='navListItem'>
-              <ListItemText primary="Home" />
+              <NavLink className='link' to='/'>Home</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <ListItemText primary="Videos" />
+              <NavLink className='link' to='about-us'>About Us</NavLink>
             </ListItem>
             <ListItem className='navListItem' >
-              <ListItemText primary="Blogs" />
+              <NavLink className='link' to='vidoes'>Videos</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <ListItemText primary="About" />
+              <NavLink className='link' to='blogs'>Blogs</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <ListItemText primary="Events" />
+              <NavLink className='link' to='courses'>Courses</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <ListItemText primary="Partners" />
-            </ListItem>
-            <ListItem className='navListItem'>
-              <ListItemText primary="Contact" />
-            </ListItem>
-            <ListItem className='navListItem'>
-              <ListItemText primary="Shop" />
+             <NavLink className='link' to='contact'>Contact</NavLink>
             </ListItem>
           </List>
         </div>

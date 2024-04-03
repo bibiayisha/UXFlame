@@ -29,7 +29,7 @@ function VideoSection() {
             </div>
         </Grid>
         </Grid>
-        <div class="orange-bg bg-orange"></div>
+        <div className="orange-bg bg-orange"></div>
     </div>
     </div>
   )

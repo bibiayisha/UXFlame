@@ -12,7 +12,6 @@ import { FeaturedShortsProps } from "./Types";
 class FeaturedShorts extends React.Component {
     render() {
       const {slides } = this.props;
-      console.log(slides)
       const settings = {
         dots: false,
         arrows: false,

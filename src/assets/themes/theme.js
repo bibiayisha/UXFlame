@@ -59,6 +59,14 @@ const theme = createTheme({
         }
       }
     },
+    MuiLink:{
+      styleOverrides:{
+        root:{
+          width:'max-content !important',
+          
+        }
+      }
+    },
     MuiDrawer: {
       styleOverrides: {
         root: {
@@ -76,17 +84,7 @@ const theme = createTheme({
           fontSize: '13px',
           fontWeight: 'bold',
           color: 'white',
-          '&:hover': {
-            borderBottom: '2px solid white',
-            cursor: 'pointer'
-          },
-          '&.navListItem': {
-            '&:hover': {
-              borderBottom: 'none',
-              textDecoration: 'underline solid 2px white',
-              marginLeft: '8px'
-            },
-          }
+          
         }
       }
     },
