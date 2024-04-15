@@ -29,7 +29,7 @@ const QA = ({ques, ans, next})=> {
             <Typography variant='h3' className='text-white capitalize text-center md:text-left'>{ques}</Typography>
         </div>
         <div>
-        <p className='text-white text-fs-18 leading-lh-32 tracking-ls-neg4 text-center md:text-left'>{formattedtxt}</p>
+        <p className='text-white text-fs-18 leading-lh-32 tracking-ls-neg4 text-justify md:text-left'>{formattedtxt}</p>
 
         </div>
     </div>

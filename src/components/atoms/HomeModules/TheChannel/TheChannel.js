@@ -25,8 +25,8 @@ function TheChannel() {
             </div>
             <div className='mb-20'>
                 <Grid container spacing={{sm:0,md:10}}>
-                    <Grid item xs={12} md={6} lg={6} ><p className='text-white text-fs-34 md:mb-0 mb-4 w-full md:w-8/12 tracking-ls-neg3'>Explore the latest in design, coding, technology, tools, and more!</p></Grid>
-                    <Grid item xs={12} md={6} lg={6} ><p className='text-gray text-fs-18 leading-lh-32 tracking-ls-neg4'>Dive into <a href='https://www.youtube.com/c/uxflame' target='_blank' className='text-orange underline'>UXFLAME</a>,  DesignLab for Figma tutorials and UX design insights, crafting captivating experiences. In DevLab, master coding, from beginner tutorials to advanced techniques, turning ideas into reality. Experience creativity and innovation in one place.</p></Grid>
+                    <Grid item xs={12} md={6} lg={6} ><p className=' text-justify md:text-left text-white text-fs-34 md:mb-0 mb-4 w-full md:w-8/12 tracking-ls-neg3'>Explore the latest in design, coding, technology, tools, and more!</p></Grid>
+                    <Grid item xs={12} md={6} lg={6} ><p className='text-justify md:text-left text-gray text-fs-18 leading-lh-32 tracking-ls-neg4'>Dive into <a href='https://www.youtube.com/c/uxflame' target='_blank' className='text-orange underline'>UXFLAME</a>,  DesignLab for Figma tutorials and UX design insights, crafting captivating experiences. In DevLab, master coding, from beginner tutorials to advanced techniques, turning ideas into reality. Experience creativity and innovation in one place.</p></Grid>
                 </Grid>
             </div>
             <div className='margin'>

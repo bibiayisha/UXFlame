@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>} />
         <Route path='about-us' element={<AboutUs/>} />
-        <Route path='contact-us' element={<ComingSoon/>} />
+        <Route path='contact-us' element={<ContactUs/>} />
         <Route path='blogs' element={<ComingSoon/>} /> 
         <Route path='videos' element={<ComingSoon/>} /> 
         <Route path='courses' element={<ComingSoon/>} /> 

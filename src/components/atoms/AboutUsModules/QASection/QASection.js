@@ -10,7 +10,7 @@ import images from '../../../utils/constants'
 const QASection=({})=> {
     
   return (
-    <div className='bg-darkBlue py-20'>   
+    <div className='bg-darkBlue py-20 px-8 md:px-0'>   
     <div className='container '>
     <div>
     <Grid container>
