@@ -14,6 +14,10 @@ const images = {
         channel: require('../../assets/media/images/home-video-cover.svg').default,
         bgBoxes: require('../../assets/media/images/bg-boxes.svg').default,
         orgDiamond: require('../../assets/media/images/org-dimond.svg').default,
+        flameImg: require('../../assets/media/images/flame-img.svg').default,
+        m_icon1: require('../../assets/media/images/m_icon1.svg').default,
+        m_icon2: require('../../assets/media/images/m_icon2.svg').default,
+        m_icon3: require('../../assets/media/images/m_icon3.svg').default,
     },
     slider1: {
         slide1:  require('../../assets/media/slides/slider3/slide4.svg').default,
