@@ -20,7 +20,7 @@ function NewVideos() {
             <div className='mt-1 mb-10'><Typography variant='h3' className='text-white'>Every Friday <br/>at 9PM</Typography></div>
             <div className='mb-5 flex md:flex-row flex-col justify-between md:items-start items-center w-full md:w-11/12'>
               <div className='mr-4 mt-2 mb-4 md:mb-0 w-[40px] md:w-2/5'><img width={'100px'} src={images.body.bell}/></div>
-              <div><p className='text-gray text-fs-18 tracking-ls-neg2 leading-lh-32'>Remember to <span className='text-white font-semibold'>turn on the notifications bell</span> so you’ll be informed when a new video is uploaded!</p></div>
+              <div><p className='text-gray text-fs-18 tracking-ls-neg2 leading-lh-32 '>Remember to <span className='text-white font-semibold'>turn on the notifications bell</span> so you’ll be informed when a new video is uploaded!</p></div>
             </div>
             <div className='w-11/12'><p className='text-gray text-fs-18 tracking-ls-neg2 leading-lh-32'>We really appreaciate all your comments, likes and suggestions, so keep em coming!</p></div>
             <div className='my-8'>
