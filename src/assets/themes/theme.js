@@ -30,7 +30,7 @@ const theme = createTheme({
       letterSpacing: '-0.4px'
     },
     h4: {
-      fontSize: '28px',
+      fontSize: '30px',
       fontWeight: '700',
       lineHeight: '34px',
       letterSpacing: '-0.85px'

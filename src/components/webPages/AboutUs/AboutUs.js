@@ -9,12 +9,12 @@ import Mission from '../../atoms/AboutUsModules/Mission/Mission'
 
 function AboutUs() {
   return (
-    <>
+    <div>
     <Banner bgColor={'bg-offBlue'} txt1={'home'} txt2={'about'}/>
     <QASection/>
     <Mission/>
     <VideoSection/>
-    </>
+    </div>
   )
 }
 
