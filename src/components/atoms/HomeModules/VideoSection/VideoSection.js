@@ -10,7 +10,7 @@ import { mostViewedVideo } from '../../../utils/specialVars'
 
 function VideoSection() {
   return (
-    <div className='bg-darkBlue py-20'>
+    <div className='bg-darkBlue py-20  relative z-30'>
         <div className='video-sec relative bg-orange lg:bg-transparent' >
         <Grid container alignItems="stretch" className='g relative container pb-10 lg:pb-0 bg-orange lg:bg-transparent'>
         <Grid item xs={12} md={6} lg={7} >

@@ -18,6 +18,7 @@ const images = {
         m_icon1: require('../../assets/media/images/m_icon1.svg').default,
         m_icon2: require('../../assets/media/images/m_icon2.svg').default,
         m_icon3: require('../../assets/media/images/m_icon3.svg').default,
+        contact_img: require('../../assets/media/images/contact-img.svg').default,
     },
     slider1: {
         slide1:  require('../../assets/media/slides/slider3/slide4.svg').default,

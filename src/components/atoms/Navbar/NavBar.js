@@ -44,7 +44,7 @@ import './NavBar.css'
               <NavLink className='link' to='about-us'>About Us</NavLink>
             </ListItem>
             <ListItem className='navListItem' >
-              <NavLink className='link' to='vidoes'>Videos</NavLink>
+              <NavLink className='link' to='videos'>Videos</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
               <NavLink className='link' to='blogs'>Blogs</NavLink>
@@ -53,7 +53,7 @@ import './NavBar.css'
               <NavLink className='link' to='courses'>Courses</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-             <NavLink className='link' to='contact'>Contact</NavLink>
+             <NavLink className='link' to='contact-us'>Contact</NavLink>
             </ListItem>
           </List>
         </div>

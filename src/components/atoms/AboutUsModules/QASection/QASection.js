@@ -20,7 +20,7 @@ const QASection=({})=> {
          <div className='pb-10'><QA ques={qas[1].ques} ans={qas[1].ans}/></div>
         </Grid>
         <Grid item xs={12} md={6}>
-            <div className=' text-center md:text-right  md:float-right w-[60%] md:w-fit m-auto'><img src={images.body.flameImg}/></div>
+            <div className=' text-center md:text-right  md:float-right w-[60%] md:w-fit m-auto'><img  className='m-auto' src={images.body.flameImg}/></div>
         </Grid>
     </Grid>
     </div>
