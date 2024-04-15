@@ -11,6 +11,8 @@ import NavBar from './components/atoms/Navbar/NavBar';
 import Home from './components/webPages/Home/Home';
 import Footer from './components/atoms/Footer/Footer';
 import AboutUs from './components/webPages/AboutUs/AboutUs'
+import ContactUs from './components/webPages/ContactUs/ContactUs';
+import ComingSoon from './components/webPages/ComingSoon/ComingSoon';
 
 function App() {
 
@@ -28,6 +30,10 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>} />
         <Route path='about-us' element={<AboutUs/>} />
+        <Route path='contact-us' element={<ComingSoon/>} />
+        <Route path='blogs' element={<ComingSoon/>} /> 
+        <Route path='videos' element={<ComingSoon/>} /> 
+        <Route path='courses' element={<ComingSoon/>} /> 
       </Routes>
       <Footer/>
   </ThemeProvider>
