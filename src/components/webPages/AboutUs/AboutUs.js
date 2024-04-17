@@ -11,7 +11,7 @@ import Stats from '../../atoms/AboutUsModules/Stats/Stats'
 function AboutUs() {
   return (
     <div>
-    <Banner bgColor={'bg-offBlue'} txt1={'home'} txt2={'about'}/>
+    <Banner bgColor={'bg-offBlue'} txt1={'home'} txt2={'about'} link_color={'orange'}/>
     <MidSection/>
     <QASection/>
     <Stats/>
