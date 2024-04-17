@@ -10,6 +10,7 @@ import StatsCard1 from '../StatsCard/StatsCard1'
 import StatsCard2 from '../StatsCard/StatsCard2'
 import VideoThumbnail from '../../VideoThumbnail/VideoThumbnail'
 import { mostViewedVideo } from '../../../utils/specialVars'
+import './Stats.css'
 
 const Stats = () =>{
   return (
@@ -29,16 +30,16 @@ const Stats = () =>{
                             {channel_stats1.map((stat, index) => (
                                 <Grid item key={index} xs={4} md={4}>
                                     <div className='pb-2 md:pb-0'>
-                                    <StatsCard1  stats_n={stat.stats_n} txt1={stat.txt1} txt2={stat.txt2} />
+                                    <StatsCard1  stats_n={stat.stats_n}  txt1={stat.txt1} txt2={stat.txt2} />
                                     </div>
                                 </Grid>
                             ))}
                             </Grid>
                         </div>
-                        <div className='bg-offBlue mt-6'>
+                        <div className='bg-offBlue  mt-6'>
                             <Grid container >
                                 <Grid item xs={7}>
-                                   <div className='flex flex-col justify-between items-start align-middle p-0 pl-4 md:pl-10  md:p-10  h-full w-full'>
+                                   <div className='img_bg flex flex-col justify-between items-start align-middle p-0 pl-4 md:pl-10  md:p-10  h-full w-full'>
                                    <div><p className='text-white font-bold text-fs-34'>Top Video</p></div>
                                     <div className='mb-2'>
                                         <Grid container>
@@ -79,7 +80,7 @@ const Stats = () =>{
                             {channel_stats2.map((stat, index) => (
                                 <Grid item key={index} xs={6} md={12}>
                                     <div className='pb-2 md:pb-0'>
-                                    <StatsCard2  stats_n={stat.stats_n} stats_percent={stat.stats_percent} stats_sign={stat.stats_sign} txt1={stat.txt1} txt2={stat.txt2} />
+                                    <StatsCard2  stats_n={stat.stats_n} stats_percent={stat.stats_percent} stats_bg={stat.stats_bg}  stats_sign={stat.stats_sign} txt1={stat.txt1} txt2={stat.txt2} />
                                     </div>
                                 </Grid>
                             ))} 

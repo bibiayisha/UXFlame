@@ -1,0 +1,6 @@
+.img_bg{
+    background-image: url('../../../../assets/media/images/stats_img4.svg') !important;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: bottom;
+}
