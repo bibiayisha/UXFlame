@@ -36,18 +36,18 @@ function Footer() {
                 <div className='flex flex-row justify-between md:mt-14 md:mb-0 mb-4 mt-6'>
                   <div>
                     <ul>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Home</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Videos</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>News</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>About</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Home</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Videos</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>News</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>About</a></li>
                     </ul>
                   </div>
                   <div>
                     <ul>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Events</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Partners</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Contact</a></li>
-                      <li className='text-white text-fs-14  leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Shop</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Events</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Partners</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Contact</a></li>
+                      <li className='text-white text-fs-14 text-left leading-lh-21 font-semibold cursor-pointer hover:text-orange mb-2'><a>Shop</a></li>
                     </ul>
                   </div>
                 </div>
