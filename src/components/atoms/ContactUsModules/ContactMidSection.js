@@ -32,7 +32,8 @@ const ContactMidSection = ({}) =>{
   return (
     <div className='bg-darkBlue relative px-10 md:px-0'>
         <div className='relative container'>
-        <div className='container bg-offBlue pt-20  -mt-[2%] absolute z-20 mb-20'>
+          <div className='flex flex-col items-center'>
+          <div className=' bg-offBlue pt-20  -mt-[2%] absolute z-20 mb-20'>
             <div className='md:px-20 px-8'>
             <Grid container>
                 <Grid item xs={12} md={4}>
@@ -56,6 +57,7 @@ const ContactMidSection = ({}) =>{
                 </Grid>
             </Grid>
             </div>
+        </div>
         </div>
         </div>
         <div className='relative py-96 md:py-80'></div>
