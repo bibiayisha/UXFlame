@@ -4,7 +4,10 @@ export const count = {
 
 export const mostViewedVideo = {
     image: require('../../assets/media/slides/slider3/slide4.svg').default,
-    videoLink: 'https://www.youtube.com/watch?v=kemudxeBxFU&t=27s'
+    videoLink: 'https://www.youtube.com/watch?v=kemudxeBxFU&t=27s',
+    views: '5.3M',
+    likes:'870K',
+    comments: '419K'
 }
 
 export const channelVideo = {

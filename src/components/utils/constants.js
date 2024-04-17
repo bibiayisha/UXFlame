@@ -19,6 +19,13 @@ const images = {
         m_icon2: require('../../assets/media/images/m_icon2.svg').default,
         m_icon3: require('../../assets/media/images/m_icon3.svg').default,
         contact_img: require('../../assets/media/images/contact-img.svg').default,
+        about_img: require('../../assets/media/images/about-image1.svg').default,
+        stats_img1: require('../../assets/media/images/stats-img1.svg').default,
+        stats_img2: require('../../assets/media/images/stats_img2.svg').default,
+        stats_img3: require('../../assets/media/images/stats_img3.svg').default,
+        stats_img4: require('../../assets/media/images/stats_img4.svg').default,
+        stats_sign_m: require('../../assets/media/images/stats_sign_m.svg').default,
+        stats_sign_p: require('../../assets/media/images/stats_sign_p.svg').default,
     },
     slider1: {
         slide1:  require('../../assets/media/slides/slider3/slide4.svg').default,
