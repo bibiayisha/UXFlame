@@ -35,25 +35,25 @@ import './NavBar.css'
         <div>
           <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
         </div>
-        <div className=''>
-          <List className={` ${isDrawerOpen ? 'active' : ''} navList navbar-menu`}>
-            <ListItem className='navListItem'>
+        <div >
+          <List className={` ${isDrawerOpen ? 'active bg-darkBlue p-2' : ''} navList navbar-menu`}>
+            <ListItem button onClick={toggleDrawer} className='navListItem'>
               <NavLink className='link' to='/'>Home</NavLink>
             </ListItem>
-            <ListItem className='navListItem'>
+            <ListItem button onClick={toggleDrawer} className='navListItem'>
               <NavLink className='link' to='about-us'>About Us</NavLink>
             </ListItem>
-            <ListItem className='navListItem' >
+            <ListItem button onClick={toggleDrawer} className='navListItem' >
               <NavLink className='link' to='videos'>Videos</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <NavLink className='link' to='blogs'>Blogs</NavLink>
+              <NavLink button onClick={toggleDrawer} className='link' to='blogs'>Blogs</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <NavLink className='link' to='courses'>Courses</NavLink>
+              <NavLink button onClick={toggleDrawer} className='link' to='courses'>Courses</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-             <NavLink className='link' to='contact-us'>Contact</NavLink>
+             <NavLink button onClick={toggleDrawer} className='link' to='contact-us'>Contact</NavLink>
             </ListItem>
           </List>
         </div>

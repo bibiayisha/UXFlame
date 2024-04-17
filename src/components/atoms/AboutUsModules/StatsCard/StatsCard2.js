@@ -9,13 +9,13 @@ const StatsCard2 = ({stats_n, stats_percent, stats_sign, stats_bg, txt1, txt2}) 
         <div className='relative w-full text-center'><img width={'100%'} src={stats_bg}/></div>
         <div className='absolute transform -translate-x-[15%] -translate-y-[6%]'>
         <div className='flex justify-start items-start'>
-        <div><p className='text-fs-27 text-white font-bold text-center '>{stats_n}</p></div>
-        <div className='relative w-full text-center pt-2 pl-2'><img src={stats_sign}/></div>
-        <p className='text-gray text-fs-12  tracking-ls-neg4 text-left pt-2 pl-1'>{stats_percent}</p>
+        <div><p className='text-base md:text-lg text-white font-bold text-center '>{stats_n}</p></div>
+        <div className='relative w-full text-center pt-1 md:pt-2 pl-2 w-[20%] md:w-full'><img src={stats_sign}/></div>
+        <p className='text-gray text-xs md:text-sm  tracking-ls-neg4 text-left pt-1 md:pt-2 pl-1'>{stats_percent}</p>
         </div>
         <div>
-        <p className='text-white text-fs-18  tracking-ls-neg4 text-left '>{txt1}</p>
-        <p className='text-gray text-fs-14  tracking-ls-neg4 text-left '>{txt2}</p>
+        <p className='text-white text-sm md:text-base  tracking-ls-neg4 text-left '>{txt1}</p>
+        <p className='text-gray text-xs md:text-sm tracking-ls-neg4 text-left '>{txt2}</p>
         </div>
         </div>
     </div>

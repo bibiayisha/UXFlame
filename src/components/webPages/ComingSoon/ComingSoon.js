@@ -8,7 +8,7 @@ import MidSection from '../../atoms/ComingSoonModules/MidSection/MidSection'
 function ComingSoon() {
   return (
     <div>
-    <Banner bgColor={'bg-orange'} txt1={'home'} txt2={'coming soon'}/>
+    <Banner bgColor={'bg-orange'} txt1={'home'} txt2={'coming soon'} link_color={'offBlue'}/>
     <div className='relative'>
       <MidSection/>
       <VideoSection/>

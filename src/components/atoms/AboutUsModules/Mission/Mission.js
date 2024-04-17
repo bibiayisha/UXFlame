@@ -8,7 +8,7 @@ import Card from '../Card/Card'
 
 function Mission() {
   return (
-    <div className='bg-darkBlue py-20 '>
+    <div className='bg-darkBlue pt-20 '>
       <div className='container '>
       <div className='pb-2'><p className='text-fs-24 text-white font-light text-center md:text-left'>Learn about</p></div>
       <div className='pb-20'><Typography variant='h3' className='text-white capitalize text-center md:text-left'>Our Mission</Typography></div>
