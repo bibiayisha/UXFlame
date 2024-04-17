@@ -16,7 +16,7 @@ const Stats = () =>{
     <div className='bg-darkBlue py-8 md:py-20 px-8 md:px-0'>   
         <div className='container'>
             <div>
-            <div><p className='text-fs-24 text-white font-light text-center '>Get to know about founders</p></div>
+            <div><p className='text-fs-24 text-white font-light text-center '>Take a look at the</p></div>
             <div className='pt-4 '>
             <Typography variant='h3' className='text-white capitalize text-center '>Channel Stats</Typography>
             </div>
@@ -40,19 +40,25 @@ const Stats = () =>{
                                 <Grid item xs={7}>
                                    <div className='flex flex-col justify-between items-start align-middle p-0 pl-4 md:pl-10  md:p-10  h-full w-full'>
                                    <div><p className='text-white font-bold text-fs-34'>Top Video</p></div>
-                                    <div >
+                                    <div className='mb-2'>
                                         <Grid container>
                                             <Grid items xs={4}>
-                                            <p className='text-white font-bold text-fs-22'>{mostViewedVideo.views}</p>
-                                            <p className='text-white font-regular text-fs-14'>Views</p>  
+                                            <div className='mr-6'>
+                                                <p className='text-white font-bold text-fs-22 w-full'>{mostViewedVideo.views}</p>
+                                                <p className='text-white font-regular text-fs-14'>Views</p> 
+                                            </div> 
                                             </Grid>
                                             <Grid items xs={4}>
-                                            <p className='text-white font-bold text-fs-22'>{mostViewedVideo.likes}</p>
-                                            <p className='text-white font-regular text-fs-14'>Likes</p>  
+                                            <div className='mr-6'>
+                                                <p className='text-white font-bold text-fs-22'>{mostViewedVideo.likes}</p>
+                                                <p className='text-white font-regular text-fs-14'>Likes</p>
+                                            </div>  
                                             </Grid>
                                             <Grid items xs={4}>
-                                            <p className='text-white font-bold text-fs-22'>{mostViewedVideo.comments}</p>
-                                            <p className='text-white font-regular text-fs-14'>Comments</p>  
+                                            <div >
+                                                <p className='text-white font-bold text-fs-22'>{mostViewedVideo.comments}</p>
+                                                <p className='text-white font-regular text-fs-14'>Comments</p> 
+                                            </div> 
                                             </Grid>
                                         </Grid>
                                     </div>
