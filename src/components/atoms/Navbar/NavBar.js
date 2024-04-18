@@ -12,18 +12,30 @@ import './NavBar.css'
  function NavBar(props) {
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen)
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+        setIsSmallScreen(window.innerWidth < 768); 
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+    }, []);
+
   useEffect(() => {
     if (isDrawerOpen) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';
     }
-
-    // Cleanup the effect
     return () => {
       document.body.style.overflow = 'auto';
     };
@@ -37,23 +49,23 @@ import './NavBar.css'
         </div>
         <div >
           <List className={` ${isDrawerOpen ? 'active bg-darkBlue p-2' : ''} navList navbar-menu`}>
-            <ListItem button onClick={toggleDrawer} className='navListItem'>
+            <ListItem button onClick={isSmallScreen ? toggleDrawer : null} className='navListItem'>
               <NavLink className='link' to='/'>Home</NavLink>
             </ListItem>
-            <ListItem button onClick={toggleDrawer} className='navListItem'>
+            <ListItem button onClick={isSmallScreen ? toggleDrawer : null} className='navListItem'>
               <NavLink className='link' to='about-us'>About Us</NavLink>
             </ListItem>
-            <ListItem button onClick={toggleDrawer} className='navListItem' >
+            <ListItem button onClick={isSmallScreen ? toggleDrawer : null} className='navListItem' >
               <NavLink className='link' to='videos'>Videos</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <NavLink button onClick={toggleDrawer} className='link' to='blogs'>Blogs</NavLink>
+              <NavLink button onClick={isSmallScreen ? toggleDrawer : null} className='link' to='blogs'>Blogs</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-              <NavLink button onClick={toggleDrawer} className='link' to='courses'>Courses</NavLink>
+              <NavLink button onClick={isSmallScreen ? toggleDrawer : null} className='link' to='courses'>Courses</NavLink>
             </ListItem>
             <ListItem className='navListItem'>
-             <NavLink button onClick={toggleDrawer} className='link' to='contact-us'>Contact</NavLink>
+             <NavLink button onClick={isSmallScreen ? toggleDrawer : null} className='link' to='contact-us'>Contact</NavLink>
             </ListItem>
           </List>
         </div>
