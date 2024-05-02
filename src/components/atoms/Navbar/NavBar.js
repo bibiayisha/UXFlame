@@ -45,7 +45,7 @@ import './NavBar.css'
     <div className= {`w-full h-full navbar ${props.bgcolor ? 'bg-darkBlue':'bg-transparent'}`}>
       <div className='flex items-center justify-between container mx-auto  py-4'>
         <div>
-          <img width={'180px'} src={`${images.header.logo}`} alt='logo' />
+          <img width={'180px'} src={images.header.logo} alt='logo' />
         </div>
         <div >
           <List className={` ${isDrawerOpen ? 'active bg-darkBlue p-2' : ''} navList navbar-menu`}>
